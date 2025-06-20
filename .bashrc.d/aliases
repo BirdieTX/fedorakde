@@ -1,0 +1,8 @@
+alias ls='eza -a'
+alias ff='fastfetch -c examples/10'
+alias fft='fastfetch -c $HOME/.config/fastfetch/term.jsonc'
+alias neofetch='fastfetch -c neofetch'
+alias nf='fastfetch -c neofetch'
+alias update='$HOME/.bashrc.d/scripts/update.sh'
+alias update-grub='sudo grub2-mkconfig -o /etc/grub2.cfg'
+alias vim='nvim'

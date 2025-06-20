@@ -1,0 +1,13 @@
+GRUB_TIMEOUT="1"
+GRUB_TIMEOUT_STYLE="hidden"
+GRUB_HIDDEN_TIMEOUT="1"
+GRUB_HIDDEN_TIMEOUT_QUIET="true"
+GRUB_FONT="/boot/grub2/fonts/JetBrainsBold.pf2"
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT="saved"
+GRUB_SAVEDEFAULT="true"
+GRUB_DISABLE_SUBMENU="false"
+GRUB_CMDLINE_LINUX="rhgb quiet"
+GRUB_DISABLE_RECOVERY="true"
+GRUB_ENABLE_BLSCFG="false"
+GRUB_THEME="/boot/grub2/themes/darkmatter/theme.txt

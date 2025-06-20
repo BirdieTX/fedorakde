@@ -1,0 +1,48 @@
+# Dark Matter GRUB theme (1440p)
+# Modified by Birdie
+
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-font: "JetBrains Mono NL Bold 24"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
++ boot_menu {
+    menu_pixmap_style = "boot_menu_*.png"
+    left = 10%
+    width = 45%
+    top = 30%
+    height = 40%
+    item_font = "JetBrains Mono NL Bold 30"
+    item_color = "#6b6b6b"
+    selected_item_font = "JetBrains Mono NL Bold 30"
+    selected_item_color = "#ffffff"
+    icon_width = 48
+    icon_height = 48
+    item_icon_space = 24
+    item_height = 56
+    item_padding = 8
+    item_spacing = 12
+    selected_item_pixmap_style = "select_*.png"
+    scrollbar = true
+    scrollbar_width = 10
+    scrollbar_thumb = "slider_*.png"
+}
+
++ progress_bar {
+    id = "__timeout__"
+    left = 10%
+    width = 45%
+    top = 75%
+    height = 20
+    text = ""
+    text_color = "#ffffff"
+    font = "JetBrains Mono NL Bold 24"
+    bar_style = "progress_bar_*.png"
+    highlight_style = "progress_highlight_*.png"
+}
