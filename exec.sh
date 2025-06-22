@@ -23,21 +23,6 @@ printf $CYN"Adding DNF config ..."$END
     cp -r dnf.conf /etc/dnf || OUT="Failed to copy dnf config ..."
     echo $OUT
 
-OUT='Mac style Plymouth theme added to Plymouth themes folder ...'
-printf $CYN"Adding Mac style Plymouth theme ..."$END
-    cp -r fedora-mac-style /usr/share/plymouth/themes || OUT='Failed to add Mac style Plymouth theme to themes folder ...'
-    echo $OUT
-
-OUT='Mac style Plymouth theme installed successfully ...'
-printf $CYN"Installing Mac style Plymouth theme ..."$END
-    plymouth-set-default-theme -R fedora-mac-style || OUT='Failed to install Mac style Plymouth theme ...'
-    echo $OUT
-
-OUT='Successfully regenerated initramfs ...'
-printf $CYN"Regenerating initramfs ..."$END
-    dracut --regenerate-all -f || OUT='Failed to regenerate initramfs ...'
-    echo $OUT
-
 printf $CYN"Copying user configuration files ..."$END
 
 OUT='Successfully copied .bashrc to home directory ...'
@@ -73,6 +58,7 @@ dnf remove -y \
     krfb \
     kwrite \
     kpat \
+    nano \
     neochat \
     plasma-welcome || OUT='Failed to remove packages from system ...'
     dnf autoremove -y
@@ -147,7 +133,6 @@ dnf install --allowerasing -y \
     mesa-vdpau-drivers-freeworld \
     mc \
     mozilla-openh264 \
-    neovim \
     obs-studio \
     papirus-icon-theme \
     pipewire-codec-aptx \
@@ -159,6 +144,7 @@ dnf install --allowerasing -y \
     steam \
     snapper \
     terminus-fonts \
+    vim \
     visualboyadvance-m \
     vlc \
     vlc-plugins-freeworld

@@ -9,5 +9,4 @@ GRUB_SAVEDEFAULT="true"
 GRUB_DISABLE_SUBMENU="false"
 GRUB_CMDLINE_LINUX="rhgb quiet"
 GRUB_DISABLE_RECOVERY="true"
-GRUB_ENABLE_BLSCFG="false"
-GRUB_THEME="/boot/grub2/themes/darkmatter/theme.txt
+GRUB_ENABLE_BLSCFG="true"
