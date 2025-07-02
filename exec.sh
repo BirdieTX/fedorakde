@@ -23,6 +23,11 @@ printf $CYN"Adding DNF config ..."$END
     cp -r dnf.conf /etc/dnf || OUT="Failed to copy dnf config ..."
     echo $OUT
 
+OUT='Nobara Plasma theme added ...'
+printf $CYN"Adding Nobara Plasma theme ..."$END
+    cp -r dnf.conf /etc/dnf || OUT="Failed to add Nobara plasma theme ..."
+    echo $OUT
+
 printf $CYN"Copying user configuration files ..."$END
 
 OUT='Successfully copied .bashrc to home directory ...'
@@ -172,6 +177,7 @@ printf $CYN"Installing flatpaks from Flathub ..."$END
     sudo -u "$SUDO_USER" flatpak install flathub -y com.jetbrains.Rider
     sudo -u "$SUDO_USER" flatpak install flathub -y com.pokemmo.PokeMMO
     sudo -u "$SUDO_USER" flatpak install flathub -y com.protonvpn.www
+    sudo -u "$SUDO_USER" flatpak install flathub -y com.todoist.Todoist
     sudo -u "$SUDO_USER" flatpak install flathub -y com.vysp3r.ProtonPlus
     sudo -u "$SUDO_USER" flatpak install flathub -y io.github.aandrew_me.ytdn
     sudo -u "$SUDO_USER" flatpak install flathub -y io.github.freedoom.Phase1
