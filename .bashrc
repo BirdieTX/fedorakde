@@ -5,7 +5,9 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-fastfetch -c $HOME/.config/fastfetch/term.jsonc
+if [[ $(tty) == *"pts"* ]]; then
+    fastfetch -c $HOME/.config/fastfetch/term.jsonc
+fi
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
@@ -28,7 +30,9 @@ unset rc
 
 # Agnoster bash theme
 export THEME=$HOME/.bashrc.d/agnoster.bash
-if [[ -f $THEME ]]; then
-     export DEFAULT_USER=`whoami`
-     source $THEME
+if [[ $(tty) == *"pts"* ]]; then
+    if [[ -f $THEME ]]; then
+         export DEFAULT_USER=`whoami`
+         source $THEME
+    fi
 fi
