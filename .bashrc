@@ -29,7 +29,7 @@ fi
 unset rc
 
 # Agnoster bash theme
-export THEME=$HOME/.bashrc.d/agnoster.bash
+export THEME=$HOME/.shrc/agnoster.bash
 if [[ $(tty) == *"pts"* ]]; then
     if [[ -f $THEME ]]; then
          export DEFAULT_USER=`whoami`

@@ -23,12 +23,12 @@ printf $CYN"Adding DNF config ..."$END
     cp -r dnf.conf /etc/dnf || OUT="Failed to copy dnf config ..."
     echo $OUT
 
-OUT='Nobara Plasma theme added ...'
-printf $CYN"Adding Nobara Plasma theme ..."$END
-    cp -r dnf.conf /etc/dnf || OUT="Failed to add Nobara plasma theme ..."
-    echo $OUT
-
 printf $CYN"Copying user configuration files ..."$END
+
+OUT='Successfully copied .shrc to home directory ...'
+printf $CYN"Copying .shrc ..."$END
+    sudo -u "$SUDO_USER" cp -r .shrc "$USER_HOME" || OUT='Failed to copy .shrc to home directory ...'
+    echo $OUT
 
 OUT='Successfully copied .bashrc to home directory ...'
 printf $CYN"Copying .bashrc ..."$END
@@ -94,9 +94,9 @@ printf $CYN"Refreshing mirrorlist and performing system update ..."$END
 
 printf $CYN"Installing system rpm packages ..."$END
 dnf install --allowerasing -y \
+    alacritty \
     antimicrox \
     audacity \
-    bat \
     brave-browser \
     bottles \
     btop \
@@ -106,15 +106,26 @@ dnf install --allowerasing -y \
     codium \
     decibels \
     discord \
-    dolphin-emu \
-    dosbox-staging \
-    eza \
     fastfetch \
     ffmpeg \
     gamescope \
     gimp \
+    google-android-emoji-fonts \
     google-arimo-fonts \
+    google-carlito-fonts \
+    google-crosextra-caladea-fonts \
+    google-droid-fonts-all \
+    google-go-fonts \
     google-noto-fonts-all \
+    google-noto-sans-cjk-fonts \
+    google-noto-sans-cjk-vf-fonts \
+    google-noto-serif-cjk-vf-fonts \
+    google-noto-sans-hk-fonts \
+    google-noto-serif-cjk-fonts \
+    google-roboto-fonts \
+    google-roboto-mono-fonts \
+    google-roboto-slab-fonts \
+    google-rubik-fonts \
     gstreamer1-plugins-bad-freeworld \
     gstreamer-plugins-espeak \
     gstreamer1-plugin-openh264 \
@@ -132,6 +143,7 @@ dnf install --allowerasing -y \
     libheif-freeworld \
     libxcrypt-compat \
     lutris \
+    material-icons-fonts \
     memtest86+ \
     mercurial \
     mesa-va-drivers-freeworld \
@@ -150,9 +162,7 @@ dnf install --allowerasing -y \
     snapper \
     terminus-fonts \
     vim \
-    visualboyadvance-m \
-    vlc \
-    vlc-plugins-freeworld
+    vlc
     printf $GRN "System rpm packages installed ..."$END
 
 printf $CYN"Setting default text editor to VS Codium ..."$END
@@ -196,7 +206,10 @@ printf $CYN"Installing flatpaks from Flathub ..."$END
 printf $CYN"Disabling Network Manager wait online service ..."$END
     systemctl disable NetworkManager-wait-online.service || printf $RED"Failed to disable NetworkManager-wait-online.service"$END
     printf $GRN"NetworkManager-wait-online.service disabled ..."$END
+
+printf $CYN"Regenerating initramfs ..."$END
     dracut --regenerate-all -f
+    printf $GRN"Successfully regenerated initramfs ..."$END
 
 printf $CYN"Updating bootloader  ...$END"
     printf $CYN"Updating grub config file ..."$END
@@ -206,8 +219,7 @@ printf $CYN"Updating bootloader  ...$END"
     grub2-mkfont -s 24 -o /boot/grub2/fonts/JetBrainsBold.pf2 /usr/share/fonts/jetbrains-mono-nl-fonts/JetBrainsMonoNL-Bold.ttf || printf $RED"Failed to make font ..." && sleep 2
     printf $GRN "JetBrains Mono font added ..."$END
     printf $CYN"Updating grub ..."$END
-    cp -r themes /boot/grub2
     grub2-mkconfig -o /etc/grub2.cfg || printf $RED"Failed to update grub ..."$END && sleep 2
 
 printf $CYN"Setup complete!"$END
-fastfetch -c examples/10
+fastfetch
