@@ -63,7 +63,6 @@ dnf remove -y \
     krfb \
     kwrite \
     kpat \
-    nano \
     neochat \
     plasma-welcome || OUT='Failed to remove packages from system ...'
     dnf autoremove -y
@@ -182,7 +181,6 @@ printf $CYN"Checking for flatpak updates ..."$END
     printf $GRN "Flatpaks are up to date ..."$END
 
 printf $CYN"Installing flatpaks from Flathub ..."$END
-    sudo -u "$SUDO_USER" flatpak install flathub -y com.bitwarden.desktop
     sudo -u "$SUDO_USER" flatpak install flathub -y com.geeks3d.furmark
     sudo -u "$SUDO_USER" flatpak install flathub -y com.jetbrains.Rider
     sudo -u "$SUDO_USER" flatpak install flathub -y com.pokemmo.PokeMMO
@@ -196,6 +194,7 @@ printf $CYN"Installing flatpaks from Flathub ..."$END
     sudo -u "$SUDO_USER" flatpak install flathub -y io.missioncenter.MissionCenter
     sudo -u "$SUDO_USER" flatpak install flathub -y md.obsidian.Obsidian
     sudo -u "$SUDO_USER" flatpak install flathub -y me.proton.Mail
+    sudo -u "$SUDO_USER" flatpak install flathub -y me.proton.Pass
     sudo -u "$SUDO_USER" flatpak install flathub -y net.runelite.RuneLite
     sudo -u "$SUDO_USER" flatpak install flathub -y org.azahar_emu.Azahar
     sudo -u "$SUDO_USER" flatpak install flathub -y org.openttd.OpenTTD
@@ -215,9 +214,6 @@ printf $CYN"Updating bootloader  ...$END"
     printf $CYN"Updating grub config file ..."$END
     cp -r grub /etc/default || printf $RED"Failed to update grub config file ..."$END && sleep 2
     printf $GRN "Grub config file added ..."$END && sleep 1
-    printf $CYN"Adding JetBrains Mono font to grub ..."$END
-    grub2-mkfont -s 24 -o /boot/grub2/fonts/JetBrainsBold.pf2 /usr/share/fonts/jetbrains-mono-nl-fonts/JetBrainsMonoNL-Bold.ttf || printf $RED"Failed to make font ..." && sleep 2
-    printf $GRN "JetBrains Mono font added ..."$END
     printf $CYN"Updating grub ..."$END
     grub2-mkconfig -o /etc/grub2.cfg || printf $RED"Failed to update grub ..."$END && sleep 2
 
