@@ -9,7 +9,7 @@ CYN='\033[0;36m'
 
 printf $CYN"Rebooting system to perform offline upgrade ..."$END
 OUT='System rebooting ...'
-sudo dnf offline-upgrade reboot  || OUT="Failed to initialize offline upgrade ..."
+sudo dnf5 offline-upgrade reboot  || OUT="Failed to initialize offline upgrade ..."
 printf $CYN
 echo $OUT
 printf $END

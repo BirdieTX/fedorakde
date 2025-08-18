@@ -23,6 +23,20 @@ printf $CYN"Adding DNF config ..."$END
     cp -r dnf.conf /etc/dnf || OUT="Failed to copy dnf config ..."
     echo $OUT
 
+OUT='Mac style Plymouth theme added to Plymouth themes folder ...'
+printf $CYN"Adding Mac style Plymouth theme ..."$END
+    cp -r fedora-mac-style /usr/share/plymouth/themes || OUT='Failed to add Mac style Plymouth theme to themes folder ...'
+    printf $CYN
+    echo $OUT
+    printf $END
+
+OUT='Mac style Plymouth theme installed successfully ...'
+printf $CYN"Installing Mac style Plymouth theme ..."$END
+    plymouth-set-default-theme -R fedora-mac-style || OUT='Failed to install Mac style Plymouth theme ...'
+    printf $CYN
+    echo $OUT
+    printf $END
+
 printf $CYN"Copying user configuration files ..."$END
 
 OUT='Successfully copied .shrc to home directory ...'
@@ -49,18 +63,11 @@ printf $CYN"Removing packages from system ..."$END
 
 OUT='All packages removed successfully ...'
 dnf remove -y \
-    abrt \
     akregator \
     dragon \
     firefox \
-    kaddressbook \
-    kmail \
-    kmahjongg \
-    kmines \
     kmouth \
     korganizer \
-    krdc \
-    krfb \
     kwrite \
     kpat \
     neochat \
@@ -107,6 +114,7 @@ dnf install --allowerasing -y \
     discord \
     fastfetch \
     ffmpeg \
+    g4music \
     gamescope \
     gimp \
     google-android-emoji-fonts \
@@ -132,6 +140,7 @@ dnf install --allowerasing -y \
     htop \
     inotify-tools \
     jetbrains-mono-fonts-all \
+    kate \
     kdenlive \
     kid3 \
     kstars \
@@ -148,24 +157,25 @@ dnf install --allowerasing -y \
     mesa-va-drivers-freeworld \
     mesa-vdpau-drivers-freeworld \
     mc \
+    minecraft-launcher \
     mozilla-openh264 \
     obs-studio \
+    openrgb \
     papirus-icon-theme \
     pipewire-codec-aptx \
     protontricks \
     pulseaudio-utils \
+    qalculate \
     qbittorrent \
-    radeontop \
     remmina \
     steam \
     snapper \
     terminus-fonts \
     vim \
-    vlc
+    virt-manager \
+    vlc \
+    waycheck
     printf $GRN "System rpm packages installed ..."$END
-
-printf $CYN"Setting default text editor to VS Codium ..."$END
-    xdg-mime default codium.desktop text/plain || printf $RED"Failed to change default text editor to Visual Studio Code ..."$END && sleep 2
 
 printf $CYN"Switching mesa drivers to freeworld ..."$END
     dnf swap mesa-va-drivers mesa-va-drivers-freeworld -y || printf $RED"POSSIBLY REDUNDANT COMMAND; IGNORE IF FAILED ..."$END && sleep 5
@@ -181,7 +191,6 @@ printf $CYN"Checking for flatpak updates ..."$END
     printf $GRN "Flatpaks are up to date ..."$END
 
 printf $CYN"Installing flatpaks from Flathub ..."$END
-    sudo -u "$SUDO_USER" flatpak install flathub -y com.geeks3d.furmark
     sudo -u "$SUDO_USER" flatpak install flathub -y com.jetbrains.Rider
     sudo -u "$SUDO_USER" flatpak install flathub -y com.pokemmo.PokeMMO
     sudo -u "$SUDO_USER" flatpak install flathub -y com.protonvpn.www
@@ -190,13 +199,11 @@ printf $CYN"Installing flatpaks from Flathub ..."$END
     sudo -u "$SUDO_USER" flatpak install flathub -y io.github.aandrew_me.ytdn
     sudo -u "$SUDO_USER" flatpak install flathub -y io.github.freedoom.Phase1
     sudo -u "$SUDO_USER" flatpak install flathub -y io.github.endless_sky.endless_sky
-    sudo -u "$SUDO_USER" flatpak install flathub -y io.github.shiftey.Desktop
     sudo -u "$SUDO_USER" flatpak install flathub -y io.missioncenter.MissionCenter
     sudo -u "$SUDO_USER" flatpak install flathub -y md.obsidian.Obsidian
     sudo -u "$SUDO_USER" flatpak install flathub -y me.proton.Mail
     sudo -u "$SUDO_USER" flatpak install flathub -y me.proton.Pass
     sudo -u "$SUDO_USER" flatpak install flathub -y net.runelite.RuneLite
-    sudo -u "$SUDO_USER" flatpak install flathub -y org.azahar_emu.Azahar
     sudo -u "$SUDO_USER" flatpak install flathub -y org.openttd.OpenTTD
     sudo -u "$SUDO_USER" flatpak install flathub -y org.signal.Signal
     sudo -u "$SUDO_USER" flatpak install flathub -y sh.ppy.osu

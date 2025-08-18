@@ -1,0 +1,6 @@
+[window]
+dimensions = { columns = 80, lines = 20 }
+
+[font]
+normal = { family = "JetBrains Mono NL", style = "Regular" }
+size = 16
