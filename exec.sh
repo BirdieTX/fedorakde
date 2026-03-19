@@ -16,105 +16,38 @@ fi
 
 USER_HOME=$(eval printf ~$SUDO_USER)
 
-printf $CYN"Copying system configuration files ..."$END
+cp -r etc /
+plymouth-set-default-theme -R tribar
+sudo -u "$SUDO_USER" cp -r .bashrc.d "$USER_HOME"
+sudo -u "$SUDO_USER" cp -r .config "$USER_HOME"
+sudo -u "$SUDO_USER" cp -r .scripts "$USER_HOME"
+sudo -u "$SUDO_USER" cp -r Pictures "$USER_HOME"
 
-OUT='DNF Config added successfully ...'
-printf $CYN"Adding DNF config ..."$END
-    cp -r dnf.conf /etc/dnf || OUT="Failed to copy dnf config ..."
-    echo $OUT
-
-OUT='Mac style Plymouth theme added to Plymouth themes folder ...'
-printf $CYN"Adding Mac style Plymouth theme ..."$END
-    cp -r fedora-mac-style /usr/share/plymouth/themes || OUT='Failed to add Mac style Plymouth theme to themes folder ...'
-    printf $CYN
-    echo $OUT
-    printf $END
-
-OUT='Mac style Plymouth theme installed successfully ...'
-printf $CYN"Installing Mac style Plymouth theme ..."$END
-    plymouth-set-default-theme -R fedora-mac-style || OUT='Failed to install Mac style Plymouth theme ...'
-    printf $CYN
-    echo $OUT
-    printf $END
-
-printf $CYN"Copying user configuration files ..."$END
-
-OUT='Successfully copied .shrc to home directory ...'
-printf $CYN"Copying .shrc ..."$END
-    sudo -u "$SUDO_USER" cp -r .shrc "$USER_HOME" || OUT='Failed to copy .shrc to home directory ...'
-    echo $OUT
-
-OUT='Successfully copied .bashrc to home directory ...'
-printf $CYN"Copying .bashrc ..."$END
-    sudo -u "$SUDO_USER" cp -r .bashrc "$USER_HOME" || OUT='Failed to copy .bashrc to home directory ...'
-    echo $OUT
-
-OUT='Successfully copied .bashrc.d folder to home directory ...'
-printf $CYN"Copying .bashrc.d folder to home directory ..."$END
-    sudo -u "$SUDO_USER" cp -r .bashrc.d "$USER_HOME" || OUT='Failed to copy .bashrc.d folder to home directory ...'
-    echo $OUT
-
-OUT='Successfully added user config folder to home directory ...'
-printf $CYN"Adding user config folder to home directory ..."$END
-    sudo -u "$SUDO_USER" cp -r .config "$USER_HOME" || OUT='Failed to copy .config files to ~/.config'
-    echo $OUT
-
-printf $CYN"Removing packages from system ..."$END
-
-OUT='All packages removed successfully ...'
-dnf remove -y \
-    akregator \
-    dragon \
-    firefox \
-    kmouth \
-    korganizer \
-    kwrite \
-    kpat \
-    neochat \
-    plasma-welcome || OUT='Failed to remove packages from system ...'
-    dnf autoremove -y
-    echo $OUT
-
-printf $CYN"Enabling additional repositories ..."$END
-
-OUT='Brave Browser repository added ...'
-printf $CYN"Adding Brave Browser rpm repository ..."$END
-    dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-    echo $OUT
-
-OUT='Terra repository added ...'
-printf $CYN"Adding Terra repository ..."$END
-    dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
-    echo $OUT
-
-printf $CYN"Adding RPM Fusion repositories ..."$END
-
-OUT='RPM Fusion repositories added ...'
-dnf install -y \
+dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+dnf5 install -y \
     "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" \
-    "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
-    echo $OUT
-
-printf $CYN"Refreshing mirrorlist and performing system update ..."$END
-    dnf upgrade --refresh -y
-
-printf $CYN"Installing system rpm packages ..."$END
+    "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm" \
+    terra-release-extras \
+    terra-release-mesa
 dnf install --allowerasing -y \
     alacritty \
     antimicrox \
-    audacity \
-    brave-browser \
+    audacity-freeworld \
+    bat \
     bottles \
     btop \
     btrfs-assistant \
     cargo \
     cmatrix \
     codium \
-    decibels \
-    discord \
+    default-fonts \
+    elisa-player \
+    eza \
     fastfetch \
     ffmpeg \
-    g4music \
+    fish \
+    freedoom \
+    freedoom2 \
     gamescope \
     gimp \
     google-android-emoji-fonts \
@@ -133,96 +66,138 @@ dnf install --allowerasing -y \
     google-roboto-mono-fonts \
     google-roboto-slab-fonts \
     google-rubik-fonts \
-    gstreamer1-plugins-bad-freeworld \
     gstreamer-plugins-espeak \
-    gstreamer1-plugin-openh264 \
+    gstreamer1-plugins-bad-freeworld \
+    gstreamer1-plugins-ugly \
     hardinfo2 \
+    hexchat \
     htop \
     inotify-tools \
     jetbrains-mono-fonts-all \
+    jetbrainsmono-nerd-fonts \
     kate \
     kdenlive \
     kid3 \
+    kmahjongg \
+    kmines \
+    kmousetool \
+    knights \
+    kolourpaint \
+    kompare \
+    kpat \
+    krename \
+    krita \
     kstars \
-    kvantum \
+    ksudoku \
+    ktimer \
+    kweather \
+    libaacs \
     libavcodec-freeworld \
+    libbdplus \
     libcurl-devel \
+    libde265 \
     libdnf5-plugin-actions \
+    libfreeaptx \
     libheif-freeworld \
+    libmimic \
+    libndi \
+    libreoffice-base \
+    libreoffice-draw \
+    libreoffice-math \
     libxcrypt-compat \
     lutris \
     material-icons-fonts \
     memtest86+ \
-    mercurial \
-    mesa-va-drivers-freeworld \
-    mesa-vdpau-drivers-freeworld \
-    mc \
+    mesa-va-drivers \
+    mesa-vdpau-drivers \
+    mesa-vulkan-drivers.x86_6 \
     minecraft-launcher \
+    mission-center \
     mozilla-openh264 \
     obs-studio \
+    okteta \
     openrgb \
+    openttd \
+    openvpn \
     papirus-icon-theme \
     pipewire-codec-aptx \
     protontricks \
     pulseaudio-utils \
-    qalculate \
     qbittorrent \
+    qrca \
+    radeontop \
     remmina \
+    rpmfusion-free-appstream-data \
+    rpmfusion-free-obsolete-packages \
+    rpmfusion-nonfree-appstream-data \
+    rpmfusion-nonfree-obsolete-packages \
+    rsms-inter-fonts \
+    rsms-inter-vf-fonts \
+    rust \
     steam \
     snapper \
     terminus-fonts \
-    vim \
+    terminus-fonts-console \
+    vim-default-editor \
     virt-manager \
     vlc \
-    waycheck
-    printf $GRN "System rpm packages installed ..."$END
+    vlc-plugins-all \
+    vlc-plugins-freeworld \
+    waycheck \
+    wine \
+    wine-alsa \
+    wine-pulseaudio \
+    winetricks \
+    x264 \
+    x265 \
+    yazi \
+    zed \
+dnf5 autoremove -y
+dnf5 upgrade --allowerasing --allow-downgrade --skip-unavailable --refresh -y
+bash -c "cat > /etc/dnf/libdnf5-plugins/actions.d/snapper.actions" <<'EOF'
+# Get snapshot description
+pre_transaction::::/usr/bin/sh -c echo\ "tmp.cmd=$(ps\ -o\ command\ --no-headers\ -p\ '${pid}')"
 
-printf $CYN"Switching mesa drivers to freeworld ..."$END
-    dnf swap mesa-va-drivers mesa-va-drivers-freeworld -y || printf $RED"POSSIBLY REDUNDANT COMMAND; IGNORE IF FAILED ..."$END && sleep 5
-    dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld -y || printf $RED"POSSIBLY REDUNDANT COMMAND; IGNORE IF FAILED ..."$END && sleep 5
-    printf $GRN "Mesa freeworld drivers installed ..."$END
+# Creates pre snapshot before the transaction and stores the snapshot number in the "tmp.snapper_pre_number"  variable.
+pre_transaction::::/usr/bin/sh -c echo\ "tmp.snapper_pre_number=$(snapper\ create\ -t\ pre\ -c\ number\ -p\ -d\ '${tmp.cmd}')"
 
-printf $CYN"Removing unused packages ..."$END
-    dnf autoremove -y || printf $RED"Failed to resolve transaction ..."$END
-    printf $GRN "Unused packages successfully removed ..."
-
-printf $CYN"Checking for flatpak updates ..."$END
-    sudo -u "$SUDO_USER" flatpak update -y
-    printf $GRN "Flatpaks are up to date ..."$END
-
-printf $CYN"Installing flatpaks from Flathub ..."$END
-    sudo -u "$SUDO_USER" flatpak install flathub -y com.jetbrains.Rider
-    sudo -u "$SUDO_USER" flatpak install flathub -y com.pokemmo.PokeMMO
-    sudo -u "$SUDO_USER" flatpak install flathub -y com.protonvpn.www
-    sudo -u "$SUDO_USER" flatpak install flathub -y com.todoist.Todoist
-    sudo -u "$SUDO_USER" flatpak install flathub -y com.vysp3r.ProtonPlus
-    sudo -u "$SUDO_USER" flatpak install flathub -y io.github.aandrew_me.ytdn
-    sudo -u "$SUDO_USER" flatpak install flathub -y io.github.freedoom.Phase1
-    sudo -u "$SUDO_USER" flatpak install flathub -y io.github.endless_sky.endless_sky
-    sudo -u "$SUDO_USER" flatpak install flathub -y io.missioncenter.MissionCenter
-    sudo -u "$SUDO_USER" flatpak install flathub -y md.obsidian.Obsidian
-    sudo -u "$SUDO_USER" flatpak install flathub -y me.proton.Mail
-    sudo -u "$SUDO_USER" flatpak install flathub -y me.proton.Pass
-    sudo -u "$SUDO_USER" flatpak install flathub -y net.runelite.RuneLite
-    sudo -u "$SUDO_USER" flatpak install flathub -y org.openttd.OpenTTD
-    sudo -u "$SUDO_USER" flatpak install flathub -y org.signal.Signal
-    sudo -u "$SUDO_USER" flatpak install flathub -y sh.ppy.osu
-    printf $GRN "All flatpaks installed ..."$END && sleep 1
-
-printf $CYN"Disabling Network Manager wait online service ..."$END
-    systemctl disable NetworkManager-wait-online.service || printf $RED"Failed to disable NetworkManager-wait-online.service"$END
-    printf $GRN"NetworkManager-wait-online.service disabled ..."$END
-
-printf $CYN"Regenerating initramfs ..."$END
-    dracut --regenerate-all -f
-    printf $GRN"Successfully regenerated initramfs ..."$END
-
-printf $CYN"Updating bootloader  ...$END"
-    printf $CYN"Updating grub config file ..."$END
-    cp -r grub /etc/default || printf $RED"Failed to update grub config file ..."$END && sleep 2
-    printf $GRN "Grub config file added ..."$END && sleep 1
-    printf $CYN"Updating grub ..."$END
-    grub2-mkconfig -o /etc/grub2.cfg || printf $RED"Failed to update grub ..."$END && sleep 2
-
-printf $CYN"Setup complete!"$END
+# If the variable "tmp.snapper_pre_number" exists, it creates post snapshot after the transaction and removes the variable "tmp.snapper_pre_number".
+post_transaction::::/usr/bin/sh -c [\ -n\ "${tmp.snapper_pre_number}"\ ]\ &&\ snapper\ create\ -t\ post\ --pre-number\ "${tmp.snapper_pre_number}"\ -c\ number\ -d\ "${tmp.cmd}"\ ;\ echo\ tmp.snapper_pre_number\ ;\ echo\ tmp.cmd
+EOF
+snapper -c root create-config /
+restorecon -RFv /.snapshots
+snapper -c root set-config ALLOW_USERS=$USER SYNC_ACL=yes
+echo 'PRUNENAMES = ".snapshots"' | sudo tee -a /etc/updatedb.conf
+sed -i.bkp \
+  -e '/^#GRUB_BTRFS_SNAPSHOT_KERNEL_PARAMETERS=/a \
+GRUB_BTRFS_SNAPSHOT_KERNEL_PARAMETERS="rd.live.overlay.overlayfs=1"' \
+  -e '/^#GRUB_BTRFS_GRUB_DIRNAME=/a \
+GRUB_BTRFS_GRUB_DIRNAME="/boot/grub2"' \
+  -e '/^#GRUB_BTRFS_MKCONFIG=/a \
+GRUB_BTRFS_MKCONFIG=/usr/bin/grub2-mkconfig' \
+  -e '/^#GRUB_BTRFS_SCRIPT_CHECK=/a \
+GRUB_BTRFS_SCRIPT_CHECK=grub2-script-check' \
+  config
+make install
+systemctl enable grub-btrfsd.service
+systemctl enable snapper-timeline.timer
+systemctl enable snapper-cleanup.timer
+systemctl disable NetworkManager-wait-online.service
+dracut --regenerate-all -f
+sudo -u "$SUDO_USER" flatpak install flathub -y com.adamcake.Bolt
+sudo -u "$SUDO_USER" flatpak install flathub -y com.discordapp.Discord
+sudo -u "$SUDO_USER" flatpak install flathub -y com.markopejic.downloader
+sudo -u "$SUDO_USER" flatpak install flathub -y com.pokemmo.PokeMMO
+sudo -u "$SUDO_USER" flatpak install flathub -y com.rafaelmardojai.Blanket
+sudo -u "$SUDO_USER" flatpak install flathub -y com.vysp3r.ProtonPlus
+sudo -u "$SUDO_USER" flatpak install flathub -y io.edcd.EDMarketConnector
+sudo -u "$SUDO_USER" flatpak install flathub -y io.github.plrigaux.sysd-manager
+sudo -u "$SUDO_USER" flatpak install flathub -y md.obsidian.Obsidian
+sudo -u "$SUDO_USER" flatpak install flathub -y me.proton.Mail
+sudo -u "$SUDO_USER" flatpak install flathub -y me.proton.Pass
+sudo -u "$SUDO_USER" flatpak install flathub -y net.runelite.RuneLite
+sudo -u "$SUDO_USER" flatpak install flathub -y org.gnome.gitlab.YaLTeR.VideoTrimmer
+sudo -u "$SUDO_USER" flatpak install flathub -y org.signal.Signal
+sudo -u "$SUDO_USER" flatpak install flathub -y ro.go.hmlendea.DL-Desktop
+sudo -u "$SUDO_USER" flatpak install flathub -y sh.ppy.osu
 fastfetch
