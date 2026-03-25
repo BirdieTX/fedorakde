@@ -17,18 +17,20 @@ fi
 USER_HOME=$(eval printf ~$SUDO_USER)
 
 cp -r etc /
-plymouth-set-default-theme -R tribar
+rm /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
+rm /etc/yum.repos.d/google-chrome.repo
+rm /etc/yum.repos.d/rpmfusion-nonfree-nvidia-driver.repo
+rm /etc/yum.repos.d/rpmfusion-nonfree-steam.repo
+flatpak remote-delete fedora
+flatpak remote-delete fedora-testing
 sudo -u "$SUDO_USER" cp -r .bashrc.d "$USER_HOME"
 sudo -u "$SUDO_USER" cp -r .config "$USER_HOME"
 sudo -u "$SUDO_USER" cp -r .scripts "$USER_HOME"
 sudo -u "$SUDO_USER" cp -r Pictures "$USER_HOME"
 
-dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 dnf5 install -y \
     "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" \
-    "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm" \
-    terra-release-extras \
-    terra-release-mesa
+    "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
 dnf install --allowerasing -y \
     alacritty \
     antimicrox \
@@ -41,8 +43,6 @@ dnf install --allowerasing -y \
     cmatrix \
     codium \
     default-fonts \
-    elisa-player \
-    eza \
     fastfetch \
     ffmpeg \
     fish \
@@ -52,14 +52,10 @@ dnf install --allowerasing -y \
     gimp \
     google-android-emoji-fonts \
     google-arimo-fonts \
-    google-carlito-fonts \
-    google-crosextra-caladea-fonts \
     google-droid-fonts-all \
     google-go-fonts \
     google-noto-fonts-all \
     google-noto-sans-cjk-fonts \
-    google-noto-sans-cjk-vf-fonts \
-    google-noto-serif-cjk-vf-fonts \
     google-noto-sans-hk-fonts \
     google-noto-serif-cjk-fonts \
     google-roboto-fonts \
@@ -69,62 +65,48 @@ dnf install --allowerasing -y \
     gstreamer-plugins-espeak \
     gstreamer1-plugins-bad-freeworld \
     gstreamer1-plugins-ugly \
+    HandBrake \
+    HandBrake-gui \
     hardinfo2 \
     hexchat \
     htop \
     inotify-tools \
     jetbrains-mono-fonts-all \
-    jetbrainsmono-nerd-fonts \
     kate \
     kdenlive \
     kid3 \
-    kmahjongg \
-    kmines \
     kmousetool \
     knights \
-    kolourpaint \
     kompare \
-    kpat \
     krename \
     krita \
     kstars \
     ksudoku \
     ktimer \
     kweather \
-    libaacs \
     libavcodec-freeworld \
-    libbdplus \
     libcurl-devel \
-    libde265 \
     libdnf5-plugin-actions \
-    libfreeaptx \
     libheif-freeworld \
-    libmimic \
-    libndi \
     libreoffice-base \
-    libreoffice-draw \
-    libreoffice-math \
     libxcrypt-compat \
     lutris \
     material-icons-fonts \
+    mc \
     memtest86+ \
-    mesa-va-drivers \
-    mesa-vdpau-drivers \
-    mesa-vulkan-drivers.x86_6 \
-    minecraft-launcher \
-    mission-center \
+    mesa-va-drivers-freeworld \
+    mesa-vdpau-drivers-freeworld \
+    mesa-vulkan-drivers-freeworld.x86_6 \
+    mesa-vulkan-drivers-freeworld.i686 \
     mozilla-openh264 \
     obs-studio \
     okteta \
     openrgb \
     openttd \
-    openvpn \
     papirus-icon-theme \
     pipewire-codec-aptx \
     protontricks \
-    pulseaudio-utils \
     qbittorrent \
-    qrca \
     radeontop \
     remmina \
     rpmfusion-free-appstream-data \
@@ -147,11 +129,12 @@ dnf install --allowerasing -y \
     wine \
     wine-alsa \
     wine-pulseaudio \
-    winetricks \
-    x264 \
-    x265 \
-    yazi \
-    zed \
+    winetricks
+dnf5 remove -y \
+    dragon \
+    kmouth \
+    kwalletmanager5 \
+    neochat
 dnf5 autoremove -y
 dnf5 upgrade --allowerasing --allow-downgrade --skip-unavailable --refresh -y
 bash -c "cat > /etc/dnf/libdnf5-plugins/actions.d/snapper.actions" <<'EOF'
@@ -183,13 +166,15 @@ systemctl enable grub-btrfsd.service
 systemctl enable snapper-timeline.timer
 systemctl enable snapper-cleanup.timer
 systemctl disable NetworkManager-wait-online.service
-dracut --regenerate-all -f
+dracut --regenerate-all -f -v
 sudo -u "$SUDO_USER" flatpak install flathub -y com.adamcake.Bolt
+sudo -u "$SUDO_USER" flatpak install flathub -y com.brave.Browser
 sudo -u "$SUDO_USER" flatpak install flathub -y com.discordapp.Discord
 sudo -u "$SUDO_USER" flatpak install flathub -y com.markopejic.downloader
 sudo -u "$SUDO_USER" flatpak install flathub -y com.pokemmo.PokeMMO
 sudo -u "$SUDO_USER" flatpak install flathub -y com.rafaelmardojai.Blanket
 sudo -u "$SUDO_USER" flatpak install flathub -y com.vysp3r.ProtonPlus
+sudo -u "$SUDO_USER" flatpak install flathub -y dev.zed.Zed
 sudo -u "$SUDO_USER" flatpak install flathub -y io.edcd.EDMarketConnector
 sudo -u "$SUDO_USER" flatpak install flathub -y io.github.plrigaux.sysd-manager
 sudo -u "$SUDO_USER" flatpak install flathub -y md.obsidian.Obsidian

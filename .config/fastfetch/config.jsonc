@@ -17,12 +17,12 @@
     },
     {
       "type": "os",
-      "key": " Distribution       ",
+      "key": " Distribution       ",
       "format": "{3}",
     },
     {
       "type": "kernel",
-      "key": " Kernel             ",
+      "key": " Kernel             ",
       "format": "{2}",
     },
     {
