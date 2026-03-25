@@ -25,8 +25,10 @@ flatpak remote-delete fedora
 flatpak remote-delete fedora-testing
 sudo -u "$SUDO_USER" cp -r .bashrc.d "$USER_HOME"
 sudo -u "$SUDO_USER" cp -r .config "$USER_HOME"
+sudo -u "$SUDO_USER" cp -r .local "$USER_HOME"
 sudo -u "$SUDO_USER" cp -r .scripts "$USER_HOME"
 sudo -u "$SUDO_USER" cp -r Pictures "$USER_HOME"
+plymouth-set-default-theme -R tribar
 
 dnf5 install -y \
     "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" \
