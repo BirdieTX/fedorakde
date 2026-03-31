@@ -97,8 +97,7 @@ dnf install --allowerasing -y \
     mc \
     memtest86+ \
     mesa-va-drivers-freeworld \
-    mesa-vdpau-drivers-freeworld \
-    mesa-vulkan-drivers-freeworld.x86_6 \
+    mesa-vulkan-drivers-freeworld.x86_64 \
     mesa-vulkan-drivers-freeworld.i686 \
     mozilla-openh264 \
     obs-studio \
@@ -132,6 +131,7 @@ dnf install --allowerasing -y \
     wine-alsa \
     wine-pulseaudio \
     winetricks
+dnf5 swap -y mesa-va-drivers mesa-va-drivers-freeworld
 dnf5 remove -y \
     dragon \
     kmouth \
@@ -179,6 +179,7 @@ sudo -u "$SUDO_USER" flatpak install flathub -y com.vysp3r.ProtonPlus
 sudo -u "$SUDO_USER" flatpak install flathub -y dev.zed.Zed
 sudo -u "$SUDO_USER" flatpak install flathub -y io.edcd.EDMarketConnector
 sudo -u "$SUDO_USER" flatpak install flathub -y io.github.plrigaux.sysd-manager
+sudo -u "$SUDO_USER" flatpak install flathub -y io.github.pol_rivero.github-desktop-plus
 sudo -u "$SUDO_USER" flatpak install flathub -y md.obsidian.Obsidian
 sudo -u "$SUDO_USER" flatpak install flathub -y me.proton.Mail
 sudo -u "$SUDO_USER" flatpak install flathub -y me.proton.Pass
