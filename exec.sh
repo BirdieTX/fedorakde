@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# This is script is currently broken, don't use  it
-
 set -e
 
 END='\033[0m\n'
