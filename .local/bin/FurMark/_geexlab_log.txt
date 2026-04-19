@@ -1,0 +1,136 @@
+07:31:55(0000001)	[info ]	GeeXLab Player v0.66.2.0 (Oct 26 2025@10:05:52)
+07:31:55(0000002)	[info ]	Scriptable Proto-Engine (Lua, Python, GLSL, OpenGL, Vulkan)
+07:31:55(0000003)	[info ]	(C)2009-2025 Geeks3D
+07:31:55(0000004)	[info ]	Homepage: https://geeks3d.com/geexlab/
+07:31:55(0000005)	[info ]	Discord server: https://www.geeks3d.com/discord/
+07:31:55(0000006)	[info ]	GeeXLab Player is starting up...
+07:31:55(0000007)	[info ]	GeeXLab Player is launched with admin (root) rights.
+07:31:55(0000008)	[info ]	[stb] STB image loader. Supported formats: *.JPEG, *.PNG, *.TGA, *.BMP, *.PSD, *.GIF, *.HDR, *.PIC
+07:31:55(0000009)	[info ]	[tinyexr] EXR image loader.
+07:31:55(0000010)	[info ]	[lib3ds] Lib3ds loader (core plugin).
+07:31:55(0000011)	[info ]	[ObjLoaderV1] OBJ 3D loader (core plugin).
+07:31:55(0000012)	[info ]	[ObjLoaderV2] OBJ loader based on Tiny OBJ Loader (core plugin).
+07:31:55(0000013)	[info ]	[STL] STL (StereoLithography) 3D loader (core plugin).
+07:31:55(0000014)	[info ]	[glTF] glTF 3D loader (core plugin).
+07:31:55(0000015)	[info ]	[SQLite3] SQLite3 version 3.50.4
+07:31:55(0000016)	[info ]	GraphX Core 0.60.1.0 (codename: Dirac) initialization ok.
+07:31:55(0000017)	[info ]	GeeXLab home directory: /home/birdie/.local/bin/FurMark/
+07:31:55(0000018)	[info ]	HW platform type: PC
+07:31:55(0000019)	[info ]	Linux information:
+07:31:55(0000020)	[info ]	- sysname: Linux
+07:31:55(0000021)	[info ]	- release: 6.18.8-200.fc43.x86_64
+07:31:55(0000022)	[info ]	- version: #1 SMP PREEMPT_DYNAMIC Fri Jan 30 20:23:28 UTC 2026
+07:31:55(0000023)	[info ]	- machine: x86_64
+07:31:55(0000024)	[info ]	display server detected: wayland
+07:31:55(0000025)	[info ]	SW platform type: Linux 6.18.8-200.fc43.x86_64 64-bit
+07:31:55(0000026)	[info ]	Command line: /home/birdie/.local/bin/FurMark/FurMark_GUI 
+07:31:56(0000027)	[info ]	Plugins search path: /home/birdie/.local/bin/FurMark/dylibs/;/home/birdie/.local/bin/FurMark/dylibs/physx5/;/home/birdie/.local/bin/FurMark/dylibs/physx4/;/home/birdie/.local/bin/FurMark/dylibs/physx3/;/home/birdie/.local/bin/FurMark/dylibs/ffmpeg/;/home/birdie/.local/bin/FurMark/dylibs/assimp/;/home/birdie/.local/bin/FurMark/dylibs/imagemagick/;/home/birdie/.local/bin/FurMark/dylibs/fmod/;/home/birdie/.local/bin/FurMark/dylibs/python/;/home/birdie/.local/bin/FurMark/dylibs/flex/;/home/birdie/.local/bin/FurMark/dylibs/freeimage/;/home/birdie/.local/bin/FurMark/dylibs/openvr/;/home/birdie/.local/bin/FurMark/dylibs/leap/;/home/birdie/.local/bin/FurMark/dylibs/anttweakbar/;
+07:31:56(0000028)	[info ]	App directory: /home/birdie/.local/bin/FurMark/
+07:31:56(0000029)	[info ]	Scripting libs directory: /home/birdie/.local/bin/FurMark/libs/
+07:31:56(0000030)	[info ]	[GpuMonitor] Linux x86_64 - CPU name: AMD Ryzen 9 9900X3D 12-Core Processor, CPU speed: 5386MHz, RAM: 94169MB
+07:31:56(0000031)	[info ]	[GpuMonitor] Operating system detected: Linux 6.18.8-200.fc43.x86_64 64-bit
+07:31:56(0000032)	[info ]	[GpuMonitor] DRM: scanning GPUs...
+07:31:56(0000033)	[info ]	[GpuMonitor] > GPU 0
+07:31:56(0000034)	[info ]	[GpuMonitor]   - hwmon index: 4
+07:31:56(0000035)	[info ]	[GpuMonitor]   - device ID: 1002-13C0
+07:31:56(0000036)	[info ]	[GpuMonitor]   - revision ID: CA
+07:31:56(0000037)	[info ]	[GpuMonitor]   - subdevice ID: 1043-8877
+07:31:56(0000038)	[info ]	[GpuMonitor]   - VBIOS: 102-RAPHAEL-008
+07:31:56(0000039)	[info ]	[GpuMonitor]   - core usage: 0 %
+07:31:56(0000040)	[info ]	[GpuMonitor]   - driver: amdgpu
+07:31:56(0000041)	[info ]	[GpuMonitor]   - core clock: 600 MHz
+07:31:56(0000042)	[info ]	[GpuMonitor]   - core temperature: 36 °C
+07:31:56(0000043)	[info ]	[GpuMonitor]   - power: 0 W
+07:31:56(0000044)	[info ]	[GpuMonitor] > GPU 1
+07:31:56(0000045)	[info ]	[GpuMonitor]   - hwmon index: 3
+07:31:56(0000046)	[info ]	[GpuMonitor]   - device ID: 1002-7550
+07:31:56(0000047)	[info ]	[GpuMonitor]   - revision ID: C0
+07:31:56(0000048)	[info ]	[GpuMonitor]   - subdevice ID: 1EAE-8811
+07:31:56(0000049)	[info ]	[GpuMonitor]   - VBIOS: 113-EXT108832-100
+07:31:56(0000050)	[info ]	[GpuMonitor]   - core usage: 2 %
+07:31:56(0000051)	[info ]	[GpuMonitor]   - driver: amdgpu
+07:31:56(0000052)	[info ]	[GpuMonitor]   - core clock: 30 MHz
+07:31:56(0000053)	[info ]	[GpuMonitor]   - mem clock: 96 MHz
+07:31:56(0000054)	[info ]	[GpuMonitor]   - core temperature: 23 °C
+07:31:56(0000055)	[info ]	[GpuMonitor]   - power: 9 W
+07:31:56(0000056)	[info ]	[GpuMonitor]   - num fans: 1
+07:31:56(0000057)	[info ]	[GpuMonitor]     > fan[1] speed: 0 RPM
+07:31:56(0000058)	[info ]	[GpuMonitor] Num GPUs detected: 2
+07:31:56(0000059)	[info ]	[GpuMonitor] > GPU0
+07:31:56(0000060)	[info ]	[GpuMonitor]   - name: 
+07:31:56(0000061)	[info ]	[GpuMonitor]   - PCI codes: 0x1002-0x13C0
+07:31:56(0000062)	[info ]	[GpuMonitor]   - VBIOS: 102-RAPHAEL-008
+07:31:56(0000063)	[info ]	[GpuMonitor]   - core temperature: 36 degC
+07:31:56(0000064)	[info ]	[GpuMonitor] > GPU1
+07:31:56(0000065)	[info ]	[GpuMonitor]   - name: XFX RX 9070 XT Mercury OC Magnetic Air
+07:31:56(0000066)	[info ]	[GpuMonitor]   - PCI codes: 0x1002-0x7550
+07:31:56(0000067)	[info ]	[GpuMonitor]   - VBIOS: 113-EXT108832-100
+07:31:56(0000068)	[info ]	[GpuMonitor]   - core temperature: 23 degC
+07:31:56(0000069)	[info ]	================================================================================
+07:31:56(0000070)	[info ]	Display size: width=3840, height=1080
+07:31:56(0000071)	[info ]	Display size in mm: width=1016, height=285
+07:31:56(0000072)	[info ]	...
+07:31:56(0000073)	[info ]	[OpenGL] GLX version: 1.4
+07:31:56(0000074)	[info ]	[OpenGL] GLX_VENDOR (srv): SGI
+07:31:56(0000075)	[info ]	[OpenGL] GLX_VERSION (svr): 1.4
+07:31:56(0000076)	[info ]	[OpenGL] GLX_VENDOR (client): Mesa Project and SGI
+07:31:56(0000077)	[info ]	[OpenGL] GLX_VERSION (client): 1.4
+07:31:56(0000078)	[info ]	[OpenGL] GLX_RENDERER_VENDOR_ID_MESA: 4098
+07:31:56(0000079)	[info ]	[OpenGL] GLX_RENDERER_DEVICE_ID_MESA: 30032
+07:31:56(0000080)	[info ]	[OpenGL] GLX_RENDERER_VERSION_MESA: 25.3.4
+07:31:56(0000081)	[info ]	[OpenGL] GLX_RENDERER_ACCELERATED_MESA: 1
+07:31:56(0000082)	[info ]	[OpenGL] GLX_RENDERER_VIDEO_MEMORY_MESA: 16384 MB
+07:31:56(0000083)	[info ]	[OpenGL] GLX_RENDERER_UNIFIED_MEMORY_ARCHITECTURE_MESA: NO
+07:31:56(0000084)	[info ]	[OpenGL] GLX_RENDERER_VENDOR_ID_MESA: AMD
+07:31:56(0000085)	[info ]	[OpenGL] GLX_RENDERER_DEVICE_ID_MESA: AMD Radeon RX 9070 XT (radeonsi, gfx1201, LLVM 21.1.8, DRM 3.64, 6.18.8-200.fc43.x86_64)
+07:31:56(0000086)	[info ]	Geeks3D FurMark - demo started with an OpenGL 4.6 context.
+07:31:56(0000087)	[info ]	Quick OpenGL information (use /glinfo for more limits):
+07:31:56(0000088)	[info ]	GL_RENDERER: AMD Radeon RX 9070 XT (radeonsi, gfx1201, LLVM 21.1.8, DRM 3.64, 6.18.8-200.fc43.x86_64)
+07:31:56(0000089)	[info ]	GL_VENDOR: AMD
+07:31:56(0000090)	[info ]	GL_VERSION: 4.6 (Compatibility Profile) Mesa 25.3.4
+07:31:56(0000091)	[info ]	GL_SHADING_LANGUAGE_VERSION: 4.60
+07:31:56(0000092)	[info ]	OpenGL version detected: 4.6
+07:31:56(0000093)	[info ]	OpenGL extensions: 319
+07:31:56(0000094)	[info ]	OpenGL hardware limits:
+07:31:56(0000095)	[info ]	  GL_MAX_VERTEX_ATTRIBS: 16
+07:31:56(0000096)	[info ]	  GL_MAX_VERTEX_UNIFORM_COMPONENTS: 16384
+07:31:56(0000097)	[info ]	  GL_MAX_FRAGMENT_UNIFORM_COMPONENTS: 16384
+07:31:56(0000098)	[info ]	  GL_MAX_TEXTURE_SIZE: 16384
+07:31:56(0000099)	[info ]	  GL_MAX_VIEWPORT_DIMS: 16384 16384
+07:31:56(0000100)	[info ]	  GL_MAX_TEXTURE_IMAGE_UNITS: 32
+07:31:56(0000101)	[info ]	  GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 160
+07:31:56(0000102)	[info ]	Render window (Geeks3D FurMark) initialized (renderer type: OpenGL)
+07:31:56(0000103)	[info ]	[Lua] Lua version: Lua 5.4.8
+07:31:56(0000104)	[info ]	[Lua] LuaFileSystem initialized ok.
+07:31:56(0000105)	[info ]	[Lua] LuaSocket core initialized ok.
+07:31:56(0000106)	[info ]	[Lua] Mime core initialized ok.
+07:31:56(0000107)	[info ]	[Lua] LuaSQL SQLite3 driver initialized ok.
+07:31:56(0000108)	[info ]	[Lua] LuaGL initialized ok.
+07:31:56(0000109)	[info ]	[Lua] initialization ok.
+07:31:56(0000110)	[info ]	Scene compilation: SUCCESS.
+07:31:56(0000111)	[info ]	screen size detected: 3840 x 1080
+07:31:56(0000112)	[info ]	FurMark 2.10.2 is starting up...
+07:31:56(0000113)	[info ]	DPI scale: 1.0
+07:31:56(0000114)	[info ]	Checking for new version...
+07:31:56(0000115)	[info ]	Your version is up to date
+07:31:56(0000116)	[info ]	[Vulkan2] Vulkan renderer plugin (Windows, Linux)
+07:31:56(0000117)	[info ]	[Vulkan2] instance API version: 4198400 (Vulkan 1.1)
+07:31:56(0000118)	[info ]	[Vulkan2] [ GPU 0 ]--------------------------------------
+07:31:56(0000119)	[info ]	[Vulkan2] - name: AMD Radeon RX 9070 XT (RADV GFX1201)
+07:31:56(0000120)	[info ]	[Vulkan2] - PCI-ID: 1002-7550
+07:31:56(0000121)	[info ]	[Vulkan2] - Vulkan API version: 1.4.328
+07:31:56(0000122)	[info ]	[Vulkan2] - Device extensions: 226
+07:31:56(0000123)	[info ]	[Vulkan2] [ GPU 1 ]--------------------------------------
+07:31:56(0000124)	[info ]	[Vulkan2] - name: AMD Ryzen 9 9900X3D 12-Core Processor (RADV RAPHAEL_MENDOCINO)
+07:31:56(0000125)	[info ]	[Vulkan2] - PCI-ID: 1002-13C0
+07:31:56(0000126)	[info ]	[Vulkan2] - Vulkan API version: 1.4.328
+07:31:56(0000127)	[info ]	[Vulkan2] - Device extensions: 225
+07:31:56(0000128)	[info ]	- GPU 0: 
+07:31:56(0000129)	[info ]	- GPU 1: AMD Radeon RX 9070 XT
+07:31:56(0000130)	[info ]	scripts INIT execution: OK.
+07:31:59(0000131)	[info ]	Scene statistics:
+07:31:59(0000132)	[info ]	- 401 frames rendered during 2.250 seconds
+07:31:59(0000133)	[info ]	- average framerate: 178.2 FPS
+07:31:59(0000134)	[info ]	Stopping GeeXLab Player...
+07:31:59(0000135)	[info ]	GraphX Core stopped ok.
+07:31:59(0000136)	[info ]	Exit from GeeXLab Player.

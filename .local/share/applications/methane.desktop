@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Game;ArcadeGame;
+Comment=
+Exec=methane-wrapper
+GenericName=
+Icon=methane
+Keywords=Game;Arcade;Retro;
+Name=Super Methane Brothers
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,31 @@
+[Desktop Entry]
+Actions=NewDocument;
+Categories=Office;FlowChart;Graphics;2DGraphics;VectorGraphics;X-Red-Hat-Base;
+Comment=
+Exec=libreoffice --draw %U
+GenericName[en_US]=Drawing Program
+GenericName=Drawing Program
+Icon=libreoffice-draw
+InitialPreference=5
+Keywords=Vector;Schema;Diagram;Layout;OpenDocument Graphics;Microsoft Publisher;Microsoft Visio;Corel Draw;cdr;odg;svg;pdf;vsd;
+MimeType=application/clarisworks;application/pdf;application/vnd.corel-draw;application/vnd.ms-publisher;application/vnd.oasis.opendocument.graphics;application/vnd.oasis.opendocument.graphics-flat-xml;application/vnd.oasis.opendocument.graphics-template;application/vnd.quark.quarkxpress;application/vnd.stardivision.draw;application/vnd.sun.xml.draw;application/vnd.sun.xml.draw.template;application/vnd.visio;application/x-pagemaker;application/x-stardraw;application/x-wpg;image/x-emf;image/x-freehand;image/x-wmf;
+Name=LibreOffice Draw
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=libreoffice-draw
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-GIO-NoFuse=true
+X-KDE-Protocols=file,http,webdav,webdavs
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+
+[Desktop Action NewDocument]
+Exec=libreoffice --draw
+Icon=document-new
+Name[en_US]=New Drawing
+Name=New Drawing

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=GNOME;GTK;Game;LogicGame;
+Comment=
+Exec=gweled
+Icon=org.gweled.gweled
+Name=Gweled
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

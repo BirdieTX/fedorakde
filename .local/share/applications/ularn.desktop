@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Game;RolePlaying;
+Comment=
+Encoding=UTF-8
+Exec=Ularn
+GenericName=
+Icon=ularn.png
+Name=Ularn
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=true
+TerminalOptions=
+Type=Application
+Version=1.0
+X-Desktop-File-Install-Version=0.27
+X-KDE-SubstituteUID=false
+X-KDE-Username=

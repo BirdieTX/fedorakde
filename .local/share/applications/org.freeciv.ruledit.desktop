@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Qt;Game;StrategyGame;
+Comment=
+Exec=freeciv-ruledit
+Icon=freeciv-ruledit
+Keywords=strategy;simulation;civilization;tiles;history;mankind;multiplayer;editor;
+Name=Freeciv Ruleset Editor
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

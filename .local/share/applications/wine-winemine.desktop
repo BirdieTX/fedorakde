@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Game;LogicGame;
+Comment=
+Exec=winemine
+GenericName=Wine Minesweeper
+Icon=winemine
+Name=Minesweeper
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=winemine.exe
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

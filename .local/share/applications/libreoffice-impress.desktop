@@ -1,0 +1,30 @@
+[Desktop Entry]
+Actions=NewDocument;
+Categories=Office;Presentation;X-Red-Hat-Base;
+Comment=
+Exec=libreoffice --impress %U
+GenericName=Presentation
+Icon=libreoffice-impress
+InitialPreference=5
+Keywords=Slideshow;Slides;OpenDocument Presentation;Microsoft PowerPoint;Microsoft Works;OpenOffice Impress;odp;ppt;pptx;
+MimeType=application/mspowerpoint;application/vnd.apple.keynote;application/vnd.ms-powerpoint;application/vnd.ms-powerpoint.presentation.macroEnabled.12;application/vnd.ms-powerpoint.slideshow.macroEnabled.12;application/vnd.ms-powerpoint.template.macroEnabled.12;application/vnd.oasis.opendocument.presentation;application/vnd.oasis.opendocument.presentation-flat-xml;application/vnd.oasis.opendocument.presentation-template;application/vnd.openxmlformats-officedocument.presentationml.presentation;application/vnd.openxmlformats-officedocument.presentationml.slide;application/vnd.openxmlformats-officedocument.presentationml.slideshow;application/vnd.openxmlformats-officedocument.presentationml.template;application/vnd.stardivision.impress;application/vnd.sun.xml.impress;application/vnd.sun.xml.impress.template;application/x-iwork-keynote-sffkey;application/x-starimpress;
+Name=LibreOffice Impress
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=libreoffice-impress
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-GIO-NoFuse=true
+X-KDE-Protocols=file,http,webdav,webdavs
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+
+[Desktop Action NewDocument]
+Exec=libreoffice --impress
+Icon=document-new
+Name[en_US]=New Presentation
+Name=New Presentation

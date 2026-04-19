@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Qt;KDE;AudioVideo;AudioVideoEditing;
+Comment=
+Exec=kdenlive %F
+GenericName=Video Editor
+Icon=kdenlive
+Keywords=editing;video;audio;mlt;kde;
+MimeType=application/x-kdenlive;
+Name=Kdenlive
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=kdenlive
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=org.kde.kdenlive
+X-DocPath=kdenlive/index.html
+X-KDE-SubstituteUID=false
+X-KDE-Username=

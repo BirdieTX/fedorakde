@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Qt;KDE;AudioVideo;
+Comment=
+Exec=qrca
+GenericName=Barcode Scanner
+Icon=org.kde.qrca
+Name=Qrca
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+SingleMainWindow=true
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=

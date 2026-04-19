@@ -1,0 +1,23 @@
+[Desktop Entry]
+Categories=Game;
+Comment=
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=start-osu --file-forwarding sh.ppy.osu @@ %F @@
+Icon=sh.ppy.osu
+MimeType=application/x-osu-beatmap;application/x-osu-beatmap-archive;application/x-osu-skin-archive;application/x-osu-storyboard;application/x-osu-replay;application/zip;x-scheme-handler/osu
+Name=osu!
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+SingleMainWindow=true
+StartupNotify=true
+StartupWMClass=osu!
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.5
+X-AppImage-Version=2026.406.0-lazer
+X-Desktop-File-Install-Version=0.28
+X-Flatpak=sh.ppy.osu
+X-Flatpak-RenamedFrom=osu!.desktop;
+X-KDE-SubstituteUID=false
+X-KDE-Username=

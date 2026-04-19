@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Qt;KDE;Development;
+Comment=
+Exec=kdebugsettings
+GenericName=KDebugSettings
+Icon=debug-run
+Keywords=log;logging;category;categories;journal;logging levels;debug
+Name=Debug settings
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+SingleMainWindow=true
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.5
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=Qt;KDE;System;
+Comment=
+Exec=plasma-systemmonitor
+GenericName=Plasma System Monitor
+Icon=utilities-system-monitor
+Keywords=task;manager;process;cpu;memory;
+Name=System Monitor
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+SingleMainWindow=true
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=org.kde.plasma-systemmonitor
+X-DBUS-StartupType=Unique
+X-KDE-Migrate-Shortcut=kded5,Show System Activity
+X-KDE-Shortcuts=Meta+Esc
+X-KDE-SubstituteUID=false
+X-KDE-Username=

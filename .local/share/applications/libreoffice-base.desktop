@@ -1,0 +1,31 @@
+[Desktop Entry]
+Actions=NewDocument;
+Categories=Office;Database;X-Red-Hat-Base;
+Comment=
+Exec=libreoffice --base %U
+GenericName[en_US]=Database Development
+GenericName=Database Development
+Icon=libreoffice-base
+InitialPreference=5
+Keywords=Data;SQL;
+MimeType=application/vnd.oasis.opendocument.base;application/vnd.sun.xml.base;
+Name=LibreOffice Base
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=libreoffice-base
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-GIO-NoFuse=true
+X-KDE-Protocols=file,http,webdav,webdavs
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+
+[Desktop Action NewDocument]
+Exec=libreoffice --base
+Icon=document-new
+Name[en_US]=New Database
+Name=New Database

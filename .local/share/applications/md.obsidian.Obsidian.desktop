@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Office;
+Comment=
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=obsidian.sh --file-forwarding md.obsidian.Obsidian @@u %U @@
+Icon=md.obsidian.Obsidian
+MimeType=x-scheme-handler/obsidian;
+Name=Obsidian
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=obsidian
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Flatpak=md.obsidian.Obsidian
+X-Flatpak-Tags=proprietary;
+X-KDE-SubstituteUID=false
+X-KDE-Username=

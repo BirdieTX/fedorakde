@@ -1,0 +1,113 @@
+(21:00:23)	FurMark 2.10.2.0 (build: Oct 22 2025@13:57:17)
+(21:00:23)	(c)2007-2025 Geeks3D
+(21:00:23)	homepage: https://www.geeks3d.com/furmark/
+(21:00:23)	discord server : https://geeks3d.com/discord/
+(21:00:23)	FurMark (GeeXLab engine) initialization...
+(21:00:23)	command line: /home/birdie/.local/bin/FurMark/furmark --demo furmark-vk --gpu-index 0 --width 1024 --height 768 --msaa 1 --furmark-bfc 0 --furmark-bkg-img-id 0 
+(21:00:23)	FurMark home directory: /home/birdie/.local/bin/FurMark/
+(21:00:23)	[stb] STB image loader. Supported formats: *.JPEG, *.PNG, *.TGA, *.BMP, *.PSD, *.GIF, *.HDR, *.PIC
+(21:00:23)	[tinyexr] EXR image loader.
+(21:00:23)	[lib3ds] Lib3ds loader (core plugin).
+(21:00:23)	[ObjLoaderV1] OBJ 3D loader (core plugin).
+(21:00:23)	[ObjLoaderV2] OBJ loader based on Tiny OBJ Loader (core plugin).
+(21:00:23)	[STL] STL (StereoLithography) 3D loader (core plugin).
+(21:00:23)	[glTF] glTF 3D loader (core plugin).
+(21:00:23)	[SQLite3] SQLite3 version 3.50.4
+(21:00:23)	GraphX Core 0.60.1.0 (codename: Dirac) initialization ok.
+(21:00:23)	Linux information:
+(21:00:23)	- sysname: Linux
+(21:00:23)	- release: 6.18.6-200.fc43.x86_64
+(21:00:23)	- version: #1 SMP PREEMPT_DYNAMIC Sun Jan 18 18:57:00 UTC 2026
+(21:00:23)	- machine: x86_64
+(21:00:23)	HW platform type: PC
+(21:00:23)	SW platform type: Linux 6.18.6-200.fc43.x86_64 64-bit
+(21:00:23)	FurMark is launched with admin (root) rights.
+(21:00:23)	[GpuMonitor] Linux x86_64 - CPU name: AMD Ryzen 9 9900X3D 12-Core Processor, CPU speed: 2989MHz, RAM: 94169MB
+(21:00:23)	[GpuMonitor] Operating system detected: Linux 6.18.6-200.fc43.x86_64 64-bit
+(21:00:23)	[GpuMonitor] DRM: scanning GPUs...
+(21:00:23)	[GpuMonitor] > GPU 0
+(21:00:23)	[GpuMonitor]   - hwmon index: 4
+(21:00:23)	[GpuMonitor]   - device ID: 1002-13C0
+(21:00:23)	[GpuMonitor]   - revision ID: CA
+(21:00:23)	[GpuMonitor]   - subdevice ID: 1043-8877
+(21:00:23)	[GpuMonitor]   - VBIOS: 102-RAPHAEL-008
+(21:00:23)	[GpuMonitor]   - core usage: 0 %
+(21:00:23)	[GpuMonitor]   - driver: amdgpu
+(21:00:23)	[GpuMonitor]   - core clock: 600 MHz
+(21:00:23)	[GpuMonitor]   - core temperature: 40 Â°C
+(21:00:23)	[GpuMonitor]   - power: 0 W
+(21:00:23)	[GpuMonitor] > GPU 1
+(21:00:23)	[GpuMonitor]   - hwmon index: 3
+(21:00:23)	[GpuMonitor]   - device ID: 1002-7550
+(21:00:23)	[GpuMonitor]   - revision ID: C0
+(21:00:23)	[GpuMonitor]   - subdevice ID: 1EAE-8811
+(21:00:23)	[GpuMonitor]   - VBIOS: 113-EXT108832-100
+(21:00:23)	[GpuMonitor]   - core usage: 40 %
+(21:00:23)	[GpuMonitor]   - driver: amdgpu
+(21:00:23)	[GpuMonitor]   - core clock: 1608 MHz
+(21:00:23)	[GpuMonitor]   - mem clock: 456 MHz
+(21:00:23)	[GpuMonitor]   - core temperature: 49 Â°C
+(21:00:23)	[GpuMonitor]   - power: 41 W
+(21:00:23)	[GpuMonitor]   - num fans: 1
+(21:00:23)	[GpuMonitor]     > fan[1] speed: 0 RPM
+(21:00:23)	[GpuMonitor] Num GPUs detected: 2
+(21:00:23)	[GpuMonitor] > GPU0
+(21:00:23)	[GpuMonitor]   - name: 
+(21:00:23)	[GpuMonitor]   - PCI codes: 0x1002-0x13C0
+(21:00:23)	[GpuMonitor]   - VBIOS: 102-RAPHAEL-008
+(21:00:23)	[GpuMonitor]   - core temperature: 40 degC
+(21:00:23)	[GpuMonitor] > GPU1
+(21:00:23)	[GpuMonitor]   - name: XFX RX 9070 XT Mercury OC Magnetic Air
+(21:00:23)	[GpuMonitor]   - PCI codes: 0x1002-0x7550
+(21:00:23)	[GpuMonitor]   - VBIOS: 113-EXT108832-100
+(21:00:23)	[GpuMonitor]   - core temperature: 49 degC
+(21:00:23)	[Vulkan2] Vulkan renderer plugin (Windows, Linux)
+(21:00:23)	[Vulkan2] instance API version: 4198400 (Vulkan 1.1)
+(21:00:23)	[Vulkan2] [ GPU 0 ]--------------------------------------
+(21:00:23)	[Vulkan2] - name: AMD Radeon RX 9070 XT (RADV GFX1201)
+(21:00:23)	[Vulkan2] - PCI-ID: 1002-7550
+(21:00:23)	[Vulkan2] - Vulkan API version: 1.4.318
+(21:00:23)	[Vulkan2] - Device extensions: 217
+(21:00:23)	[Vulkan2] [ GPU 1 ]--------------------------------------
+(21:00:23)	[Vulkan2] - name: AMD Ryzen 9 9900X3D 12-Core Processor (RADV RAPHAEL_MENDOCINO)
+(21:00:23)	[Vulkan2] - PCI-ID: 1002-13C0
+(21:00:23)	[Vulkan2] - Vulkan API version: 1.4.318
+(21:00:23)	[Vulkan2] - Device extensions: 216
+(21:00:23)	FurMark (GeeXLab engine) started ok.
+(21:00:23)	Display size: width=3840, height=1080
+(21:00:23)	Display size in mm: width=1016, height=285
+(21:00:23)	X11 DPI scaling detected: 0
+(21:00:23)	X11 window resolution: 1024x768
+(21:00:23)	[Vulkan2] Vulkan renderer plugin (Windows, Linux)
+(21:00:23)	[Vulkan2] instance API version: 4198400 (Vulkan 1.1)
+(21:00:23)	[Vulkan2] [ GPU 0 ]--------------------------------------
+(21:00:23)	[Vulkan2] - name: AMD Radeon RX 9070 XT (RADV GFX1201)
+(21:00:23)	[Vulkan2] - PCI-ID: 1002-7550
+(21:00:23)	[Vulkan2] - Vulkan API version: 1.4.318
+(21:00:23)	[Vulkan2] - Device extensions: 217
+(21:00:23)	[Vulkan2] [ GPU 1 ]--------------------------------------
+(21:00:23)	[Vulkan2] - name: AMD Ryzen 9 9900X3D 12-Core Processor (RADV RAPHAEL_MENDOCINO)
+(21:00:23)	[Vulkan2] - PCI-ID: 1002-13C0
+(21:00:23)	[Vulkan2] - Vulkan API version: 1.4.318
+(21:00:23)	[Vulkan2] - Device extensions: 216
+(21:00:23)	[ArtifactScanner] Artifact scanner for GPU stability checking.
+(06:30:57)	[ Demo Quick Stats ]
+(06:30:57)	- demo                 : FurMark (VK) (built-in: YES)
+(06:30:57)	- renderer             : AMD Radeon RX 9070 XT (RADV GFX1201)
+(06:30:57)	- 3D API               : Vulkan 1.4.318
+(06:30:57)	- resolution           : 1024x768
+(06:30:57)	- frames               : 13425199
+(06:30:57)	- duration             : 34014632 ms
+(06:30:57)	- FPS (min/avg/max)    : 203 / 395 / 478
+(06:30:57)	- GPU 0:  [1002-13C0]
+(06:30:57)	  .max temperature: 60°C
+(06:30:57)	  .max usage: 0%
+(06:30:57)	  .max core clock: 600 MHz
+(06:30:57)	  .min core clock: 600 MHz
+(06:30:57)	- GPU 1: XFX RX 9070 XT Mercury OC Magnetic Air [1002-7550]
+(06:30:57)	  .max temperature: 66°C
+(06:30:57)	  .max usage: 100%
+(06:30:57)	  .max core clock: 2147 MHz
+(06:30:58)	FurMark (GeeXLab engine) is shutting down...
+(06:30:58)	GraphX Core stopped ok.
+(06:30:58)	FurMark (GeeXLab engine) shutdown ok.

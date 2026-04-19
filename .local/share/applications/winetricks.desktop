@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=Utility;
+Comment=
+Exec=winetricks --gui
+Icon=winetricks
+Name=Winetricks
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

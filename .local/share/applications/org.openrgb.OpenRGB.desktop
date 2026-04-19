@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Utility;
+Comment=
+Exec=openrgb
+Icon=org.openrgb.OpenRGB
+Name=OpenRGB
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=openrgb
+Terminal=false
+TerminalOptions=
+TryExec=openrgb
+Type=Application
+Version=1.5
+X-KDE-SubstituteUID=false
+X-KDE-Username=

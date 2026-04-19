@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Game;PackageManager;
+Comment=
+Exec=lutris %U
+Icon=net.lutris.Lutris
+Keywords=gaming;wine;emulator;
+MimeType=x-scheme-handler/lutris;application/x-lutris;
+Name=Lutris
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=net.lutris.Lutris
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-GNOME-UsesNotifications=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

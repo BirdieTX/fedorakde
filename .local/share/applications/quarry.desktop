@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Application;GTK;GNOME;Game;BoardGame;
+Comment=
+Encoding=UTF-8
+Exec=quarry
+GenericName=
+Icon=quarry.png
+MimeType=application/x-go-sgf;text/sgf;text/x-sgf;
+Name=Quarry
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

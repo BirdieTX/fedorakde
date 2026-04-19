@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Game;ArcadeGame;
+Comment=
+Encoding=UTF-8
+Exec=bombardier
+GenericName=
+Icon=bombardier-logo.png
+Name=Bombardier
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=false
+Terminal=true
+TerminalOptions=
+Type=Application
+Version=1.0
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Game;ArcadeGame;
+Comment=
+Exec=kobodl
+Icon=KoboDeluxe
+Keywords=Game;Arcade;Shooter;Scroller;Retro;
+Name=Kobo Deluxe
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

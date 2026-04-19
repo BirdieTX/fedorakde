@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=Qt;KDE;System;
+Comment=
+Exec=kmenuedit
+GenericName=
+Icon=kmenuedit
+Keywords=kmenuedit;
+Name=Menu Editor
+NoDisplay=false
+OnlyShowIn=KDE;
+Path=
+PrefersNonDefaultGPU=false
+SingleMainWindow=true
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=org.kde.kmenuedit
+X-DBUS-StartupType=Unique
+X-DocPath=kmenuedit/index.html
+X-KDE-SubstituteUID=false
+X-KDE-Username=

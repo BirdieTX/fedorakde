@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Game;
+Comment=
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=edmarketconnector io.edcd.EDMarketConnector
+GenericName=Elite Dangerous Market Connector
+Icon=io.edcd.EDMarketConnector
+Keywords=Elite;Dangerous;EDDN;EDSM;Inara;Spansh;
+Name=E:D Market Connector
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+SingleMainWindow=true
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.5
+X-Flatpak=io.edcd.EDMarketConnector
+X-KDE-SubstituteUID=false
+X-KDE-Username=

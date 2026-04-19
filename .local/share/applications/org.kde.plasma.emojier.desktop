@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Qt;KDE;Utility;
+Comment=
+Exec=plasma-emojier
+GenericName=
+Icon=preferences-desktop-emoticons
+Keywords=characters;unicode;punctuation;letters;emoji;emoticon;symbols;smiley face;
+Name=Emoji Selector
+NoDisplay=false
+OnlyShowIn=KDE;
+Path=
+PrefersNonDefaultGPU=false
+SingleMainWindow=true
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-StartupType=Unique
+X-KDE-Shortcuts=Meta+.,Meta+Ctrl+Alt+Shift+Space
+X-KDE-SubstituteUID=false
+X-KDE-Username=

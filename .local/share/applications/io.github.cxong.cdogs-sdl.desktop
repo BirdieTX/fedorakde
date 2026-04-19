@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Game;ActionGame;
+Comment=
+Exec=cdogs-sdl
+GenericName=
+Icon=io.github.cxong.cdogs-sdl
+Keywords=Game;Arcade;Shooter;Retro;
+Name=C-Dogs SDL
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+TryExec=cdogs-sdl
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=

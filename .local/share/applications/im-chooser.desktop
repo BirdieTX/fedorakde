@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Applications;Settings;X-GNOME-PersonalSettings;
+Comment=
+Encoding=UTF-8
+Exec=im-chooser
+Icon=im-chooser
+Name=Input Method Selector
+NoDisplay=false
+NotShowIn=XFCE;GNOME;
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

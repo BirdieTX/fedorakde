@@ -1,0 +1,31 @@
+[Desktop Entry]
+Actions=NewDocument;
+Categories=Office;WordProcessor;X-Red-Hat-Base;
+Comment=
+Exec=libreoffice --writer %U
+GenericName[en_US]=Word Processor
+GenericName=Word Processor
+Icon=libreoffice-writer
+InitialPreference=5
+Keywords=Text;Letter;Fax;Document;OpenDocument Text;Microsoft Word;Microsoft Works;Lotus WordPro;OpenOffice Writer;CV;odt;doc;docx;rtf;
+MimeType=application/clarisworks;application/docbook+xml;application/macwriteii;application/msword;application/prs.plucker;application/rtf;application/vnd.apple.pages;application/vnd.lotus-wordpro;application/vnd.ms-word;application/vnd.ms-word.document.macroEnabled.12;application/vnd.ms-word.template.macroEnabled.12;application/vnd.ms-works;application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text-flat-xml;application/vnd.oasis.opendocument.text-master;application/vnd.oasis.opendocument.text-master-template;application/vnd.oasis.opendocument.text-template;application/vnd.oasis.opendocument.text-web;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.template;application/vnd.palm;application/vnd.stardivision.writer-global;application/vnd.sun.xml.writer;application/vnd.sun.xml.writer.global;application/vnd.sun.xml.writer.template;application/vnd.wordperfect;application/wordperfect;application/x-abiword;application/x-aportisdoc;application/x-doc;application/x-extension-txt;application/x-fictionbook+xml;application/x-hwp;application/x-iwork-pages-sffpages;application/x-mswrite;application/x-pocket-word;application/x-sony-bbeb;application/x-starwriter;application/x-starwriter-global;application/x-t602;text/plain;text/rtf;
+Name=LibreOffice Writer
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=libreoffice-writer
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-GIO-NoFuse=true
+X-KDE-Protocols=file,http,webdav,webdavs
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+
+[Desktop Action NewDocument]
+Exec=libreoffice --writer
+Icon=document-new
+Name[en_US]=New Document
+Name=New Document

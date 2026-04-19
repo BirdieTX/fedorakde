@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Game;RolePlaying;
+Comment=
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=runelite net.runelite.RuneLite
+GenericName=Old School RuneScape
+Icon=net.runelite.RuneLite
+Keywords=games;runescape;osrs;
+Name=RuneLite
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Flatpak=net.runelite.RuneLite
+X-KDE-SubstituteUID=false
+X-KDE-Username=

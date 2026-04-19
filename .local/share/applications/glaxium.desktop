@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Game;ActionGame;
+Comment=
+Exec=glaxium-wrapper -f
+Icon=glaxium
+Keywords=Game;Arcade;Shooter;Scroller;Retro;
+Name=Glaxium
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

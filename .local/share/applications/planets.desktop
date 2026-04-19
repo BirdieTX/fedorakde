@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Game;Education;Astronomy;Physics;Simulation;
+Comment=
+Exec=planets
+Icon=planets.png
+Name=Planets
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,27 @@
+[Desktop Entry]
+Actions=new-window;new-private-window;
+Categories=Network;WebBrowser;
+Comment=
+Exec=/usr/bin/brave-browser-stable %U
+GenericName=Web Browser
+Icon=brave-browser
+MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/chromium;
+Name=Brave
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+
+[Desktop Action new-private-window]
+Exec=/usr/bin/brave-browser-stable --incognito
+Name=New Incognito Window
+
+[Desktop Action new-window]
+Exec=/usr/bin/brave-browser-stable
+Name=New Window

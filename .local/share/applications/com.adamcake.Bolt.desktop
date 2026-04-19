@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Game;
+Comment=
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=bolt com.adamcake.Bolt
+GenericName=Runescape Launcher
+Icon=com.adamcake.Bolt
+Keywords=games;
+Name=Bolt
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=com.adamcake.Bolt
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Flatpak=com.adamcake.Bolt
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Network;FileTransfer;P2P;Qt;
+Comment=
+Exec=qbittorrent %U
+GenericName=
+Icon=qbittorrent
+Keywords=bittorrent;torrent;magnet;download;p2p;
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+Name=qBittorrent
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+SingleMainWindow=true
+StartupNotify=false
+StartupWMClass=qbittorrent
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

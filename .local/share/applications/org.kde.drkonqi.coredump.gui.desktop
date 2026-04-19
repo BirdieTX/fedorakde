@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Qt;KDE;System;
+Comment=
+Exec=drkonqi-coredump-gui
+GenericName=
+Icon=tools-report-bug
+Keywords=drkonqi;crash;coredumpd;bug;
+Name=Crashed Processes Viewer
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+TryExec=coredumpctl
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

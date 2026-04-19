@@ -1,0 +1,31 @@
+[Desktop Entry]
+Actions=NewDocument;
+Categories=Office;Education;Science;Math;X-Red-Hat-Base;
+Comment=
+Exec=libreoffice --math %U
+GenericName[en_US]=Formula Editor
+GenericName=Formula Editor
+Icon=libreoffice-math
+InitialPreference=5
+Keywords=Equation;OpenDocument Formula;Formula;odf;MathML;
+MimeType=application/mathml+xml;application/vnd.oasis.opendocument.formula;application/vnd.oasis.opendocument.formula-template;application/vnd.stardivision.math;application/vnd.sun.xml.math;application/x-starmath;text/mathml;
+Name=LibreOffice Math
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=libreoffice-math
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-GIO-NoFuse=true
+X-KDE-Protocols=file,http,webdav,webdavs
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+
+[Desktop Action NewDocument]
+Exec=libreoffice --math
+Icon=document-new
+Name[en_US]=New Formula
+Name=New Formula

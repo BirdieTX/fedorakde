@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Qt;KDE;Education;X-KDE-Edu-Misc;
+Comment=
+Exec=ktouch
+GenericName=KTouch
+Icon=ktouch
+Name=Typing Tutor
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DocPath=ktouch/index.html
+X-KDE-SubstituteUID=false
+X-KDE-Username=

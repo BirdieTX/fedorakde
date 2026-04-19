@@ -1,0 +1,23 @@
+[Desktop Entry]
+Actions=Editor;
+Categories=Game;StrategyGame;
+Comment=
+Exec=sh -c 'wesnoth >/dev/null 2>&1'
+GenericName=
+Icon=wesnoth-icon
+Keywords=singleplayer;multiplayer;dark age;middle ages;medieval;mediaeval;
+Name=Battle for Wesnoth
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+
+[Desktop Action Editor]
+Exec=sh -c "wesnoth -e  >/dev/null 2>&1"
+Name=Map Editor

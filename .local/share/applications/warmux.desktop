@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Game;StrategyGame;
+Comment=
+Encoding=UTF-8
+Exec=warmux
+GenericName=
+Icon=warmux
+Name=Warmux
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

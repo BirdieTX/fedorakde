@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Game;ArcadeGame;StrategyGame;
+Comment=
+Exec=atanks
+Icon=atanks
+Name=Atomic Tanks
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Utility;GTK;GNOME;
+Comment=
+DBusActivatable=true
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=valuta io.github.idevecore.Valuta
+GenericName=
+Icon=io.github.idevecore.Valuta
+Keywords=Valuta;Converter;Currency;ExchangeRate;
+Name=Valuta
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Flatpak=io.github.idevecore.Valuta
+X-GNOME-SingleWindow=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-Purism-FormFactor=Workstation;Mobile;

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=X-Wine;
+Comment=
+Exec=wine wordpad.exe
+Icon=wordpad
+Name=Wine Wordpad
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=wordpad.exe
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

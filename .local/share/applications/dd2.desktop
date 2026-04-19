@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Game;ArcadeGame;
+Comment=
+Encoding=UTF-8
+Exec=dd2
+Icon=dd2.png
+Name=Dodgin' Diamond 2
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.26
+X-KDE-SubstituteUID=false
+X-KDE-Username=

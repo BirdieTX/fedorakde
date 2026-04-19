@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=AudioVideo;Network;
+Comment=
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=media-downloader com.markopejic.downloader
+Icon=com.markopejic.downloader
+Keywords=youtube;tube;downloader;converter;audio;video;media;download;youtube-dl;yt-dlp;ytdlp;youtubedl;music;mp3;mp4;
+Name=Media Downloader
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-Flatpak=com.markopejic.downloader
+X-KDE-SubstituteUID=false
+X-KDE-Username=

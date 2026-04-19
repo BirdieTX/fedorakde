@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Game;AdventureGame;Emulator;RolePlaying;
+Comment=
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=pokemmo.sh com.pokemmo.PokeMMO
+GenericName=
+Icon=com.pokemmo.PokeMMO
+Keywords=game;adventure;multiplayer;online;emulator;monster;battle;pokemmo
+Name=PokeMMO
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=com.pokemmo.PokeMMO
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Flatpak=com.pokemmo.PokeMMO
+X-KDE-SubstituteUID=false
+X-KDE-Username=

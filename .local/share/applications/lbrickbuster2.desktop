@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Game;ArcadeGame;BlocksGame;
+Comment=
+Exec=lbrickbuster2
+Icon=lbrickbuster2
+Name=LBrickbuster2
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

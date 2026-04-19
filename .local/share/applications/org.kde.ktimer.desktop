@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Qt;KDE;Utility;
+Comment=
+Exec=ktimer
+GenericName=KTimer
+Icon=ktimer
+Name=Timer
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DocPath=ktimer/index.html
+X-KDE-SubstituteUID=false
+X-KDE-Username=

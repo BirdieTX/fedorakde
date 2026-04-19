@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Education;
+Comment=
+Encoding=UTF-8
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=dl-desktop ro.go.hmlendea.DL-Desktop
+Icon=ro.go.hmlendea.DL-Desktop
+Keywords=Duolingo;Languages;
+Name=Duolingo
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=DL: language lessons
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-Flatpak=ro.go.hmlendea.DL-Desktop
+X-KDE-SubstituteUID=false
+X-KDE-Username=

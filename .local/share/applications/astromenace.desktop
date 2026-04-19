@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Game;ActionGame;
+Comment=
+Encoding=UTF-8
+Exec=astromenace-wrapper --noAA
+Icon=astromenace.png
+Name=Astromenace
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=

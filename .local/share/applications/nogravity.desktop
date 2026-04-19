@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Game;ActionGame;
+Comment=
+Exec=nogravity
+Icon=nogravity
+Keywords=Game;Arcade;Space;3D;
+Name=NoGravity
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-Desktop-File-Install-Version=0.27
+X-KDE-SubstituteUID=false
+X-KDE-Username=

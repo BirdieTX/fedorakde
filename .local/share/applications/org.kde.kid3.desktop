@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Qt;KDE;AudioVideo;Audio;AudioVideoEditing;
+Comment=
+Exec=kid3 %F
+GenericName=Audio Tagger
+Icon=kid3
+Keywords=audio;id3;tag;editor;id3v1;id3v2;mp3;
+MimeType=audio/mpeg;audio/ogg;application/ogg;audio/x-flac;audio/x-flac+ogg;audio/x-vorbis+ogg;audio/x-speex+ogg;audio/x-oggflac;audio/x-musepack;audio/aac;audio/mp4;audio/x-speex;audio/x-tta;audio/x-wavpack;audio/x-aiff;audio/x-it;audio/x-mod;audio/x-s3m;audio/x-ms-wma;audio/x-wav;audio/x-xm;audio/opus;audio/x-opus+ogg;audio/x-dsf;inode/directory;
+Name=Kid3
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=kid3
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DocPath=kid3/index.html
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,26 @@
+[Desktop Entry]
+Actions=NewContact;
+Categories=Qt;KDE;Office;ContactManagement;
+Comment=
+Exec=kaddressbook %u
+GenericName=KAddressBook
+Icon=kaddressbook
+Keywords=contacts;
+Name=Contacts
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+SingleMainWindow=true
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.5
+X-DocPath=kaddressbook/index.html
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+
+[Desktop Action NewContact]
+Exec=kaddressbook --newcontact
+Icon=contact-new
+Name=New Contact...

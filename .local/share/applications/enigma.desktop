@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Game;LogicGame;
+Comment=
+Exec=enigma
+Icon=enigma
+Name=Enigma
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+TryExec=enigma
+Type=Application
+X-Desktop-File-Install-Version=0.28
+X-KDE-SubstituteUID=false
+X-KDE-Username=
