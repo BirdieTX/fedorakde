@@ -51,60 +51,27 @@ dnf5 remove -y \
     neochat
 dnf5 upgrade --allowerasing --allow-downgrade --skip-unavailable --refresh -y
 dnf5 install --allowerasing -y \
-    abe \
     alacritty \
-    alienblaster \
-    amoebax \
     antimicrox \
-    armacycles-ad \
-    asc \
-    astromenace \
-    atanks \
     audacity-freeworld \
-    auriferous \
-    ballbuster \
     bat \
     bottles \
-    blobwars \
-    bombardier \
-    boswars \
     brave-browser \
     btop \
     btrfs-assistant \
-    bygfoot \
-    bzflag \
     cargo \
-    cdogs-sdl \
-    clanbomber \
     cmatrix \
     code \
-    colossus \
-    crack-attack \
-    CriticalMass \
-    crossfire-client \
-    dd2 \
     default-fonts \
-    enigma \
-    extremetuxracer \
     eza \
     fastfetch \
     ffmpeg \
-    fillets-ng \
     fish \
-    foobillard \
-    freeciv \
-    freecol \
     freedoom \
     freedoom2 \
-    freedoom \
-    frozen-bubble \
     gamescope \
-    gemdropx \
+    ghostty \
     gimp \
-    glaxium \
-    glob2 \
-    gnubg \
-    gnugo \
     google-android-emoji-fonts \
     google-arimo-fonts \
     google-droid-fonts-all \
@@ -120,29 +87,21 @@ dnf5 install --allowerasing -y \
     gstreamer-plugins-espeak \
     gstreamer1-plugins-bad-freeworld \
     gstreamer1-plugins-ugly \
-    gweled \
     HandBrake \
     HandBrake-gui \
     hardinfo2 \
-    haxima \
-    hedgewars \
     hexchat \
     htop \
     inotify-tools \
     jetbrains-mono-fonts-all \
     jetbrainsmono-nerd-fonts \
     kate \
-    kcheckers \
     kdenlive \
     kid3 \
-    klassy \
     kmousetool \
     knights \
-    KoboDeluxe \
     krename \
     krita \
-    ksnakeduel \
-    kspaceduel \
     kstars \
     ksudoku \
     ktimer \
@@ -152,50 +111,25 @@ dnf5 install --allowerasing -y \
     libdnf5-plugin-actions \
     libheif-freeworld \
     libreoffice-base \
-    lbrickbuster2 \
     libxcrypt-compat \
-    lincity-ng \
-    lordsawar \
     lutris \
-    Maelstrom \
     material-icons-fonts \
-    megaglest \
-    mirrormagic \
-    methane \
     mc \
     memtest86+ \
     mesa-vulkan-drivers.x86_64 \
     mozilla-openh264 \
     nerd-fonts \
-    nethack \
-    nethack-vultures \
-    netpanzer \
-    njam \
-    nogravity \
     obs-studio \
     okteta \
-    openlierox \
     openrgb \
     openttd \
-    pachi \
     papirus-icon-theme \
-    pingus \
-    pioneers \
-    pipenightdreams \
-    pipepanic \
     pipewire-codec-aptx \
-    planets \
-    powermanga \
     proton-vpn-gnome-desktop \
     protontricks \
-    pychess \
-    PySolFC \
     qbittorrent \
-    quarry \
     radeontop \
     remmina \
-    rocksndiamonds \
-    rogue \
     rpmfusion-free-appstream-data \
     rpmfusion-free-obsolete-packages \
     rpmfusion-nonfree-appstream-data \
@@ -203,43 +137,21 @@ dnf5 install --allowerasing -y \
     rsms-inter-fonts \
     rsms-inter-vf-fonts \
     rust \
-    scorched3d \
-    seahorse-adventures \
-    shippy \
-    solarwolf \
-    sopwith \
     steam \
-    stormbaancoureur \
     snapper \
-    taxipilot \
-    tecnoballz \
     terminus-fonts \
     terminus-fonts-console \
-    trackballs \
-    tuxpaint \
-    tuxpaint-stamps \
-    tuxtype2 \
-    ularn \
-    ultimatestunts \
     vesktop \
     vim-default-editor \
     virt-manager \
     vlc \
     vlc-plugins-all \
     vlc-plugins-freeworld \
-    vodovod \
-    warmux \
-    warzone2100 \
     waycheck \
-    wesnoth \
     wine \
     wine-alsa \
     wine-pulseaudio \
     winetricks \
-    wordwarvi \
-    xblast \
-    xgalaxy \
-    xmoto \
     yazi \
     zed \
     zen-browser

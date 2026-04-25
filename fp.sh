@@ -1,20 +1,14 @@
 #!/bin/bash
 
 flatpak install flathub -y com.adamcake.Bolt
-flatpak install flathub -y com.belmoussaoui.Obfuscate
 flatpak install flathub -y com.discordapp.Discord
 flatpak install flathub -y com.markopejic.downloader
 flatpak install flathub -y com.pokemmo.PokeMMO
-flatpak install flathub -y com.rafaelmardojai.Blanket
-flatpak install flathub -y com.vixalien.sticky
 flatpak install flathub -y com.vysp3r.ProtonPlus
 flatpak install flathub -y dev.bragefuglseth.Keypunch
 flatpak install flathub -y io.edcd.EDMarketConnector
-flatpak install flathub -y io.github.fizzyizzy05.binary
-flatpak install flathub -y io.github.idevecore.Valuta
 flatpak install flathub -y io.github.plrigaux.sysd-manager
 flatpak install flathub -y io.github.pol_rivero.github-desktop-plus
-flatpak install flathub -y io.gitlab.adhami3310.Converter
 flatpak install flathub -y io.missioncenter.MissionCenter
 flatpak install flathub -y io.github.wartybix.Constrict
 flatpak install flathub -y md.obsidian.Obsidian
