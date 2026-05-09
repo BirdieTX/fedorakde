@@ -2,6 +2,5 @@
 Name=Prime95
 Type=Application
 Icon=prime95
-Categories=System;Utility;
 Terminal=true
-Exec=/home/birdie/.local/bin/Prime95/mprime
+Exec=~/.local/bin/Prime95/mprime

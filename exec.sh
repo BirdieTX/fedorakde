@@ -64,14 +64,37 @@ dnf5 install --allowerasing -y \
     code \
     default-fonts \
     eza \
+    f21-backgrounds-kde \
+    f22-backgrounds-kde \
+    f23-backgrounds-kde \
+    f24-backgrounds-kde \
+    f25-backgrounds-kde \
+    f26-backgrounds-kde \
+    f27-backgrounds-kde \
+    f28-backgrounds-kde \
+    f29-backgrounds-kde \
+    f30-backgrounds-kde \
+    f31-backgrounds-kde \
+    f32-backgrounds-kde \
+    f33-backgrounds-kde \
+    f34-backgrounds-kde \
+    f35-backgrounds-kde \
+    f36-backgrounds-kde \
+    f37-backgrounds-kde \
+    f38-backgrounds-kde \
+    f39-backgrounds-kde \
+    f40-backgrounds-kde \
+    f41-backgrounds-kde \
+    f42-backgrounds-kde \
+    f43-backgrounds-kde \
     fastfetch \
     ffmpeg \
     fish \
     freedoom \
     freedoom2 \
     gamescope \
-    ghostty \
     gimp \
+    gnome-disk-utility \
     google-android-emoji-fonts \
     google-arimo-fonts \
     google-droid-fonts-all \
@@ -123,7 +146,6 @@ dnf5 install --allowerasing -y \
     okteta \
     openrgb \
     openttd \
-    papirus-icon-theme \
     pipewire-codec-aptx \
     proton-vpn-gnome-desktop \
     protontricks \
@@ -141,7 +163,6 @@ dnf5 install --allowerasing -y \
     snapper \
     terminus-fonts \
     terminus-fonts-console \
-    vesktop \
     vim-default-editor \
     virt-manager \
     vlc \
@@ -156,6 +177,7 @@ dnf5 install --allowerasing -y \
     zed \
     zen-browser
 dnf5 autoremove -y
+dnf5 install -y nano
 systemctl disable NetworkManager-wait-online.service
 dracut --regenerate-all -f -v
 fastfetch
