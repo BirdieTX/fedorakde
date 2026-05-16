@@ -39,16 +39,7 @@ dnf5 install -y \
     ./protonvpn-stable-release-1.0.3-1.noarch.rpm \
     "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" \
     "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
-dnf5 remove -y \
-    dragon \
-    kleopatra \
-    kmail \
-    kmailtransport \
-    kompare \
-    korganizer \
-    kmouth \
-    krdc \
-    neochat
+cp -r yum.repos.d /etc
 dnf5 upgrade --allowerasing --allow-downgrade --skip-unavailable --refresh -y
 dnf5 install --allowerasing -y \
     alacritty \
@@ -176,6 +167,16 @@ dnf5 install --allowerasing -y \
     yazi \
     zed \
     zen-browser
+dnf5 remove -y \
+    dragon \
+    kleopatra \
+    kmail \
+    kmailtransport \
+    kompare \
+    korganizer \
+    kmouth \
+    krdc \
+    neochat
 dnf5 autoremove -y
 dnf5 install -y nano
 systemctl disable NetworkManager-wait-online.service
