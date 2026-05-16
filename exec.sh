@@ -54,6 +54,7 @@ dnf5 install --allowerasing -y \
     cmatrix \
     code \
     default-fonts \
+    elisa-player \
     eza \
     f21-backgrounds-kde \
     f22-backgrounds-kde \
@@ -85,7 +86,6 @@ dnf5 install --allowerasing -y \
     freedoom2 \
     gamescope \
     gimp \
-    gnome-disk-utility \
     google-android-emoji-fonts \
     google-arimo-fonts \
     google-droid-fonts-all \
@@ -109,11 +109,17 @@ dnf5 install --allowerasing -y \
     inotify-tools \
     jetbrains-mono-fonts-all \
     jetbrainsmono-nerd-fonts \
+    kamoso \
     kate \
+    kcalc \
     kdenlive \
     kid3 \
+    kmahjongg \
+    kmines \
     kmousetool \
     knights \
+    kolourpaint \
+    kpat \
     krename \
     krita \
     kstars \
@@ -125,22 +131,27 @@ dnf5 install --allowerasing -y \
     libdnf5-plugin-actions \
     libheif-freeworld \
     libreoffice-base \
+    libreoffice-draw \
+    libreoffice-math \
     libxcrypt-compat \
     lutris \
     material-icons-fonts \
     mc \
+    mediawriter \
     memtest86+ \
     mesa-vulkan-drivers.x86_64 \
     mozilla-openh264 \
     nerd-fonts \
     obs-studio \
     okteta \
+    okular \
     openrgb \
     openttd \
     pipewire-codec-aptx \
     proton-vpn-gnome-desktop \
     protontricks \
     qbittorrent \
+    qrca \
     radeontop \
     remmina \
     rpmfusion-free-appstream-data \
@@ -150,13 +161,13 @@ dnf5 install --allowerasing -y \
     rsms-inter-fonts \
     rsms-inter-vf-fonts \
     rust \
+    skanpage \
     steam \
     snapper \
     terminus-fonts \
     terminus-fonts-console \
     vim-default-editor \
     virt-manager \
-    vlc \
     vlc-plugins-all \
     vlc-plugins-freeworld \
     waycheck \
@@ -167,16 +178,6 @@ dnf5 install --allowerasing -y \
     yazi \
     zed \
     zen-browser
-dnf5 remove -y \
-    dragon \
-    kleopatra \
-    kmail \
-    kmailtransport \
-    kompare \
-    korganizer \
-    kmouth \
-    krdc \
-    neochat
 dnf5 autoremove -y
 dnf5 install -y nano
 systemctl disable NetworkManager-wait-online.service
