@@ -95,6 +95,7 @@ dnf5 install --allowerasing -y \
     freedoom2 \
     gamescope \
     gimp \
+    git \
     gnome-disk-utility \
     google-android-emoji-fonts \
     google-arimo-fonts \
