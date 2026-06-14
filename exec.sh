@@ -27,11 +27,8 @@ sudo -u "$SUDO_USER" cp -r .scripts "$USER_HOME"
 sudo -u "$SUDO_USER" cp -r Pictures "$USER_HOME"
 plymouth-set-default-theme -R fedora-mac-style
 
-dnf5 copr enable -y sneexy/zen-browser
 dnf5 config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
 dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
-rpm --import https://packages.microsoft.com/keys/microsoft.asc &&
-echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | tee /etc/yum.repos.d/vscode.repo > /dev/null
 wget "https://repo.protonvpn.com/fedora-$(cat /etc/fedora-release | cut -d' ' -f 3)-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.3-1.noarch.rpm"
 dnf5 install -y \
     terra-release-extras \
@@ -40,21 +37,33 @@ dnf5 install -y \
     "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" \
     "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
 cp -r yum.repos.d /etc
+dnf5 remove -y \
+    dragon \
+    kde-partitionmanager \
+    kleopatra \
+    kmail \
+    kmailtransport \
+    kompare \
+    korganizer \
+    kmouth \
+    krdc \
+    neochat
 dnf5 upgrade --allowerasing --allow-downgrade --skip-unavailable --refresh -y
 dnf5 install --allowerasing -y \
     alacritty \
     antimicrox \
     audacity-freeworld \
     bat \
+    blender \
     bottles \
     brave-browser \
+    brave-origin \
     btop \
     btrfs-assistant \
     cargo \
     cmatrix \
-    code \
+    codium \
     default-fonts \
-    elisa-player \
     eza \
     f21-backgrounds-kde \
     f22-backgrounds-kde \
@@ -86,6 +95,7 @@ dnf5 install --allowerasing -y \
     freedoom2 \
     gamescope \
     gimp \
+    gnome-disk-utility \
     google-android-emoji-fonts \
     google-arimo-fonts \
     google-droid-fonts-all \
@@ -106,16 +116,13 @@ dnf5 install --allowerasing -y \
     hardinfo2 \
     hexchat \
     htop \
+    inkscape \
     inotify-tools \
     jetbrains-mono-fonts-all \
     jetbrainsmono-nerd-fonts \
-    kamoso \
     kate \
-    kcalc \
     kdenlive \
     kid3 \
-    kmahjongg \
-    kmines \
     kmousetool \
     knights \
     kolourpaint \
@@ -131,15 +138,13 @@ dnf5 install --allowerasing -y \
     libdnf5-plugin-actions \
     libheif-freeworld \
     libreoffice-base \
-    libreoffice-draw \
-    libreoffice-math \
     libxcrypt-compat \
     lutris \
     material-icons-fonts \
     mc \
-    mediawriter \
     memtest86+ \
     mesa-vulkan-drivers.x86_64 \
+    mission-center \
     mozilla-openh264 \
     nerd-fonts \
     obs-studio \
@@ -176,8 +181,7 @@ dnf5 install --allowerasing -y \
     wine-pulseaudio \
     winetricks \
     yazi \
-    zed \
-    zen-browser
+    zed
 dnf5 autoremove -y
 dnf5 install -y nano
 systemctl disable NetworkManager-wait-online.service
