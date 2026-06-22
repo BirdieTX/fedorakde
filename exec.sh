@@ -28,6 +28,8 @@ sudo -u "$SUDO_USER" cp -r Pictures "$USER_HOME"
 plymouth-set-default-theme -R fedora-mac-style
 
 dnf5 config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | tee /etc/yum.repos.d/vscode.repo > /dev/null
 dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 wget "https://repo.protonvpn.com/fedora-$(cat /etc/fedora-release | cut -d' ' -f 3)-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.3-1.noarch.rpm"
 dnf5 install -y \
@@ -62,7 +64,7 @@ dnf5 install --allowerasing -y \
     btrfs-assistant \
     cargo \
     cmatrix \
-    codium \
+    code \
     default-fonts \
     eza \
     f21-backgrounds-kde \
@@ -174,6 +176,7 @@ dnf5 install --allowerasing -y \
     terminus-fonts-console \
     vim-default-editor \
     virt-manager \
+    vlc \
     vlc-plugins-all \
     vlc-plugins-freeworld \
     waycheck \
