@@ -1,5 +1,8 @@
+#
+# ProtonVPN stable release
+#
 [protonvpn-fedora-stable]
-name =Proton VPN
+name = ProtonVPN
 baseurl = https://repo.protonvpn.com/fedora-$releasever-stable
 enabled = 1
 gpgcheck = 1

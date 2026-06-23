@@ -190,4 +190,7 @@ dnf5 autoremove -y
 dnf5 install -y nano
 systemctl disable NetworkManager-wait-online.service
 dracut --regenerate-all -f -v
+rm /usr/share/applications/com.brave.Browser.desktop
+rm /usr/share/applications/com.brave.Origin.desktop
+rm /usr/share/applications/com.protonvpn.www.desktop
 fastfetch
